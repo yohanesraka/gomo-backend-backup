@@ -1,0 +1,585 @@
+Sun Apr 30 2023 00:05:52 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] "nama_pengguna" is not allowed  Error: "nama_pengguna" is not allowed
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:27:24)
+    at /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:21:36
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/index.js:280:10) Sun Apr 30 2023 00:06:13 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Username sudah terdaftar  Error: Username sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:89:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Sun Apr 30 2023 14:52:35 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Validation error  Error
+    at Query.run (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/sequelize.js:315:28
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/model.js:2490:35)
+    at async AuthUser.create (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:129:30)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Sun Apr 30 2023 14:52:37 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Validation error  Error
+    at Query.run (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/sequelize.js:315:28
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/model.js:2490:35)
+    at async AuthUser.create (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:129:30)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Sun Apr 30 2023 14:53:27 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:34:22 Sun Apr 30 2023 14:53:27 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernak Service] Fase Pemasukan tidak ditemukan  Error: Fase Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernak (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:139:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:50:22 Sun Apr 30 2023 14:53:28 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByFase (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:173:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:58:22 Sun Apr 30 2023 14:53:28 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:66:22 Sun Apr 30 2023 14:53:28 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/jenis_kandang.controller.js:16:24 Tue May 02 2023 09:07:03 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] "email" is required  Error: "email" is required
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:27:24)
+    at /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:21:36
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/express/lib/router/index.js:280:10) Tue May 02 2023 20:03:22 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] connect ECONNREFUSED ::1:3306  SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/sequelize.js:305:26
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.login (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:30:35) Tue May 02 2023 20:03:59 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Password salah  Error: Password salah
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:41:27)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:21:23 Tue May 02 2023 20:04:15 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:34:22 Tue May 02 2023 20:04:15 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByFase (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:173:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:58:22 Tue May 02 2023 20:04:15 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernak Service] Fase Pemasukan tidak ditemukan  Error: Fase Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernak (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:139:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:50:22 Tue May 02 2023 20:04:15 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:66:22 Tue May 02 2023 20:04:15 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/jenis_kandang.controller.js:16:24 Tue May 02 2023 20:04:49 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/ternak.service.js:225:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/ternak.controller.js:16:24 Tue May 02 2023 20:04:51 GMT+0700 (Western Indonesia Time) - 404 - [getBangsa] Data Bangsa tidak ditemukan  Error: Data Bangsa tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _bangsa.getBangsa (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/bangsa.service.js:15:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/bangsa.controller.js:15:24 Tue May 02 2023 20:04:51 GMT+0700 (Western Indonesia Time) - 404 - [getFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _fase.getFase (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/fase.service.js:43:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/fase.controller.js:16:24 Tue May 02 2023 20:04:51 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/kandang.controller.js:16:24 Tue May 02 2023 20:04:51 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/ternak.service.js:710:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/ternak.controller.js:32:24 Tue May 02 2023 20:04:51 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/ternak.service.js:850:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/ternak.controller.js:40:24 Tue May 02 2023 20:04:52 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/status.controller.js:16:24 Tue May 02 2023 20:05:24 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Cannot add or update a child row: a foreign key constraint fails (`sembadafarm_db`.`s_ternak`, CONSTRAINT `s_ternak_ibfk_5` FOREIGN KEY (`id_fp`) REFERENCES `d_fase` (`id_fp`) ON DELETE SET NULL ON UPDATE CASCADE)  Error
+    at Query.run (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/model.js:2490:35)
+    at async Ternak.create (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/model.js:1362:12)
+    at async _ternak.createTernak (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/ternak.service.js:449:25)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/ternak.controller.js:64:21 Tue May 02 2023 20:05:24 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/ternak.service.js:225:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/ternak.controller.js:16:24 Tue May 02 2023 20:05:43 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:34:22 Tue May 02 2023 20:05:43 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernak Service] Fase Pemasukan tidak ditemukan  Error: Fase Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernak (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:139:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:50:22 Tue May 02 2023 20:05:43 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByFase (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:173:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:58:22 Tue May 02 2023 20:05:43 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:66:22 Tue May 02 2023 20:05:43 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/jenis_kandang.controller.js:16:24 Tue May 02 2023 20:06:09 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/ternak.service.js:225:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/ternak.controller.js:16:24 Tue May 02 2023 20:06:11 GMT+0700 (Western Indonesia Time) - 404 - [getBangsa] Data Bangsa tidak ditemukan  Error: Data Bangsa tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _bangsa.getBangsa (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/bangsa.service.js:15:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/bangsa.controller.js:15:24 Tue May 02 2023 20:06:11 GMT+0700 (Western Indonesia Time) - 404 - [getFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _fase.getFase (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/fase.service.js:43:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/fase.controller.js:16:24 Tue May 02 2023 20:06:11 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/kandang.controller.js:16:24 Tue May 02 2023 20:06:11 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/ternak.service.js:710:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/ternak.controller.js:32:24 Tue May 02 2023 20:06:11 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/ternak.service.js:850:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/ternak.controller.js:40:24 Tue May 02 2023 20:06:11 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/status.controller.js:16:24 Tue May 02 2023 20:06:24 GMT+0700 (Western Indonesia Time) - 404 - [getAllTernakInAdaptasi] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _adaptasi.getAllTernakInAdaptasi (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/adaptasi.service.js:464:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/adaptasi.controller.js:76:22 Tue May 02 2023 20:06:28 GMT+0700 (Western Indonesia Time) - 404 - [getLKPemasukanThisMonth Service] Data LK Pemasukan tidak ditemukan  Error: Data LK Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _lkPemasukan.getLKPemasukanThisMonth (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/lk_pemasukan.service.js:230:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/lk_pemasukan.controller.js:51:24 Wed May 03 2023 10:11:49 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Password salah  Error: Password salah
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:41:27)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:21:23 Wed May 03 2023 15:17:43 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:34:22 Wed May 03 2023 15:17:43 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernak Service] Fase Pemasukan tidak ditemukan  Error: Fase Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernak (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:139:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:50:22 Wed May 03 2023 15:17:43 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByFase (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:173:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:58:22 Wed May 03 2023 15:17:43 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:66:22 Wed May 03 2023 15:17:43 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/jenis_kandang.controller.js:16:24 Wed May 03 2023 15:17:52 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/ternak.service.js:225:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/ternak.controller.js:16:24 Wed May 03 2023 15:17:53 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/ternak.service.js:710:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/ternak.controller.js:32:24 Wed May 03 2023 15:17:59 GMT+0700 (Western Indonesia Time) - 404 - [getLKPemasukanThisMonth Service] Data LK Pemasukan tidak ditemukan  Error: Data LK Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _lkPemasukan.getLKPemasukanThisMonth (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/lk_pemasukan.service.js:230:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/lk_pemasukan.controller.js:51:24 Wed May 03 2023 15:18:01 GMT+0700 (Western Indonesia Time) - 404 - [getAllTernakInAdaptasi] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _adaptasi.getAllTernakInAdaptasi (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/adaptasi.service.js:464:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/adaptasi.controller.js:76:22 Wed May 03 2023 15:18:02 GMT+0700 (Western Indonesia Time) - 404 - [getTernakInPerkawinan Service] Data Fase Perkawinan tidak ditemukan  Error: Data Fase Perkawinan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _perkawinan.getTernakInPerkawinan (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/perkawinan.service.js:443:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/perkawinan.controller.js:54:22 Wed May 03 2023 15:18:02 GMT+0700 (Western Indonesia Time) - 404 - [getTernakKebuntingan Service] Fase Kebuntingan tidak ditemukan  Error: Fase Kebuntingan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _kebuntingan.getTernakKebuntingan (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/kebuntingan.service.js:245:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/kebuntingan.controller.js:40:22 Wed May 03 2023 15:18:03 GMT+0700 (Western Indonesia Time) - 404 - [getKelahiran Service] Data Fase Kelahiran tidak ditemukan  Error: Data Fase Kelahiran tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _kelahiran.getKelahiran (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/kelahiran.service.js:45:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/kelahiran.controller.js:23:22 Wed May 03 2023 15:18:03 GMT+0700 (Western Indonesia Time) - 404 - [getLepasSapihDashboard Service] Data Fase Lepas Sapih tidak ditemukan  Error: Data Fase Lepas Sapih tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _lepasSapih.getLepasSapihDashboard (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/lepas_sapih.service.js:294:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/lepas_sapih.controller.js:44:24 Wed May 03 2023 15:18:05 GMT+0700 (Western Indonesia Time) - 404 - [getLKPemasukanThisMonth Service] Data LK Pemasukan tidak ditemukan  Error: Data LK Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _lkPemasukan.getLKPemasukanThisMonth (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/lk_pemasukan.service.js:230:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/lk_pemasukan.controller.js:51:24 Wed May 03 2023 15:19:54 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:34:22 Wed May 03 2023 15:19:54 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernak Service] Fase Pemasukan tidak ditemukan  Error: Fase Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernak (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:139:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:50:22 Wed May 03 2023 15:19:54 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:66:22 Wed May 03 2023 15:19:54 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByFase (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:173:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:58:22 Wed May 03 2023 15:19:54 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/jenis_kandang.controller.js:16:24 Wed May 03 2023 15:21:20 GMT+0700 (Western Indonesia Time) - 404 - [getAllTernakInAdaptasi] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _adaptasi.getAllTernakInAdaptasi (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/adaptasi.service.js:464:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/adaptasi.controller.js:76:22 Wed May 03 2023 15:21:23 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:34:22 Wed May 03 2023 15:21:23 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernak Service] Fase Pemasukan tidak ditemukan  Error: Fase Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernak (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:139:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:50:22 Wed May 03 2023 15:21:23 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByFase (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:173:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:58:22 Wed May 03 2023 15:21:23 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/web_dash.controller.js:66:22 Wed May 03 2023 15:21:23 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/jenis_kandang.controller.js:16:24 Wed May 03 2023 15:21:29 GMT+0700 (Western Indonesia Time) - 404 - [getLKPemasukanThisMonth Service] Data LK Pemasukan tidak ditemukan  Error: Data LK Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _lkPemasukan.getLKPemasukanThisMonth (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/lk_pemasukan.service.js:230:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/lk_pemasukan.controller.js:51:24 Wed May 03 2023 15:21:34 GMT+0700 (Western Indonesia Time) - 404 - [getLKPemasukan Service] Data LK Pemasukan tidak ditemukan  Error: Data LK Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _lkPemasukan.getLKPemasukan (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/lk_pemasukan.service.js:181:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/lk_pemasukan.controller.js:24:24 Wed May 03 2023 15:21:36 GMT+0700 (Western Indonesia Time) - 404 - [getTernakMasuk Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _lkPemasukan.getTernakMasuk (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/lk_pemasukan.service.js:16:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/lk_pemasukan.controller.js:15:24 Wed May 03 2023 15:21:36 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/kandang.controller.js:16:24 Wed May 03 2023 15:21:36 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/status.controller.js:16:24 Wed May 03 2023 15:21:36 GMT+0700 (Western Indonesia Time) - 404 - [getBangsa] Data Bangsa tidak ditemukan  Error: Data Bangsa tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _bangsa.getBangsa (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/bangsa.service.js:15:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/bangsa.controller.js:15:24 Fri May 05 2023 09:43:54 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] "nama_pengguna" is required  Error: "nama_pengguna" is required
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:85:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Fri May 05 2023 09:56:27 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Nomor telepon sudah terdaftar  Error: Nomor telepon sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:93:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Fri May 05 2023 10:03:54 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] "nama_pengguna" is required  Error: "nama_pengguna" is required
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:85:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Fri May 05 2023 10:04:46 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] "nama_pengguna" is required  Error: "nama_pengguna" is required
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:85:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Fri May 05 2023 10:04:46 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] "nama_pengguna" is required  Error: "nama_pengguna" is required
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:85:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Fri May 05 2023 10:04:47 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] "nama_pengguna" is required  Error: "nama_pengguna" is required
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:85:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Fri May 05 2023 10:04:54 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] "nama_pengguna" is required  Error: "nama_pengguna" is required
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:85:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Fri May 05 2023 10:06:34 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] "nama_pengguna" is required  Error: "nama_pengguna" is required
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:85:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Fri May 05 2023 10:14:41 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] "alamat" is required  Error: "alamat" is required
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:85:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Fri May 05 2023 10:33:11 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Validation error  Error
+    at Query.run (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/sequelize.js:315:28
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/model.js:2490:35)
+    at async AuthUser.create (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:129:30)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Fri May 05 2023 10:33:11 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Validation error  Error
+    at Query.run (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/sequelize.js:315:28
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/model.js:2490:35)
+    at async AuthUser.create (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:129:30)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:37:26 Fri May 05 2023 10:33:30 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Akun anda belum aktif, silahkan cek email anda untuk aktivasi  Error: Akun anda belum aktif, silahkan cek email anda untuk aktivasi
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:36:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:21:23 Fri May 05 2023 11:11:40 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Akun anda belum aktif, silahkan cek email anda untuk aktivasi  Error: Akun anda belum aktif, silahkan cek email anda untuk aktivasi
+    at newError (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/BackEnd-GembalaApps/services/auth.service.js:36:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/BackEnd-GembalaApps/controllers/auth.controller.js:21:23 Mon May 08 2023 10:10:08 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'image' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:30:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:21:23 Mon May 08 2023 10:13:37 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'image' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:88:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:17:43 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'image' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:88:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:18:04 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'image' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:88:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:19:22 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'image' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:88:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:21:44 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'image' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:88:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:25:19 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'image' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:88:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:28:00 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'nomor_telepon' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:88:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:28:59 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'nomor_telepon' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:88:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:30:31 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'nomor_telepon' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:88:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:31:24 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:33:18 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:37:08 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:38:26 Mon May 08 2023 10:37:25 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:38:26 Mon May 08 2023 10:37:46 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] "postcode" is required  Error: "postcode" is required
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:85:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:38:12 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:40:29 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:43:03 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:50:01 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:50:29 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] "alamat" is required  Error: "alamat" is required
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:85:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:50:39 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:51:11 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:53:53 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 10:59:13 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 11:04:20 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'alamat_postcode' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:2490:35)
+    at async Peternakan.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/node_modules/sequelize/lib/model.js:1362:12)
+    at async _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:115:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 11:08:47 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Username sudah terdaftar  Error: Username sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:89:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 11:09:05 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Nomor telepon sudah terdaftar  Error: Nomor telepon sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:93:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 11:10:10 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Username sudah terdaftar  Error: Username sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:89:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 11:10:17 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Nomor telepon sudah terdaftar  Error: Nomor telepon sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:93:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 Mon May 08 2023 11:10:26 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Email sudah terdaftar  Error: Email sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/services/auth.service.js:97:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring-bc/controllers/auth.controller.js:37:26 

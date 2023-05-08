@@ -1,17 +1,44 @@
 {
   "name": "gomo",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "![](structure-code.png)",
+  "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "set": "npm install && npm run migrate",
+    "setdev": "npm install && npm run migrate && npm run dev",
+    "migrate": "npx sequelize db:migrate && npx sequelize db:seed:all",
+    "drop": "npx sequelize db:migrate:undo:all",
+    "resetdb": "npm run drop && npm run migrate",
+    "pushdev": "git push origin dev && git push backup dev",
+    "pulldev": "git pull origin dev"
   },
+  "author": "Sembada Farm",
+  "license": "ISC",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
+    "@joi/date": "^2.1.0",
+    "axios": "^1.2.0",
+    "bcrypt": "^5.0.1",
+    "chalk": "^4.1.2",
+    "child_process": "^1.0.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "date-and-time": "^2.4.1",
     "dotenv": "^16.0.3",
-    "express": "~4.16.1",
-    "morgan": "~1.9.1",
-    "sequelize": "^6.31.0",
-    "sequelize-cli": "^6.6.0"
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mariadb": "^3.0.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.8.0",
+    "randomstring": "^1.2.2",
+    "sequelize": "^6.31.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "sequelize-cli": "^6.5.1"
   }
 }
