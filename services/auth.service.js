@@ -118,7 +118,7 @@ class _auth{
                 postcode: value.postcode,
                 longitude: geocode.data.longt,
                 latitude: geocode.data.latt,
-                // alamat_postcode: geocode.data.standard.city + ', ' + geocode.data.standard.statename + ', ' + geocode.data.standard.countryname + ', ' + geocode.data.standard.postal
+                alamat_postcode: geocode.data.standard.city + ', ' + geocode.data.standard.statename + ', ' + geocode.data.standard.countryname + ', ' + geocode.data.standard.postal
             }, {transaction: t});
             if(!addPeternakan) newError(400, 'Gagal menambahkan peternakan', 'Register Service');
 
@@ -183,7 +183,7 @@ class _auth{
                     {
                         model: this.db.Peternakan,
                         as: 'peternakan',
-                        attributes: ['id_peternakan', 'nama_peternakan', 'alamat', 'postcode', 'longitude', 'latitude']
+                        attributes: ['id_peternakan', 'nama_peternakan', 'alamat', 'postcode', 'alamat_postcode', 'longitude', 'latitude']
                     }
                 ],
                 where : {
@@ -197,7 +197,7 @@ class _auth{
             // Return peternakan based on token for superadmin
             if(req.dataAuth.role === 'superadmin') {
                 const peternakan = await this.db.Peternakan.findOne({
-                    attributes: ['id_peternakan', 'nama_peternakan', 'alamat', 'postcode', 'longitude', 'latitude'],
+                    attributes: ['id_peternakan', 'nama_peternakan', 'alamat', 'postcode', 'alamat_postcode', 'longitude', 'latitude'],
                     where: {
                         id_peternakan: req.dataAuth.id_peternakan
                     }
@@ -323,7 +323,7 @@ class _auth{
             postcode: value.postcode || checkPeternakan.dataValues.postcode,
             latitude: (value.postcode && value.postcode !== checkPeternakan.dataValues.postcode) ? geocode.data.latt : checkPeternakan.dataValues.latitude,
             longitude: (value.postcode && value.postcode !== checkPeternakan.dataValues.postcode) ? geocode.data.longt : checkPeternakan.dataValues.longitude,
-            // alamat_postcode: (value.postcode && value.postcode !== checkPeternakan.dataValues.postcode) ? geocode.data.standard.city + ', ' + geocode.data.standard.statename + ', ' + geocode.data.standard.countryname + ', ' + geocode.data.standard.postal : checkPeternakan.dataValues.alamat_postcode,
+            alamat_postcode: (value.postcode && value.postcode !== checkPeternakan.dataValues.postcode) ? geocode.data.standard.city + ', ' + geocode.data.standard.statename + ', ' + geocode.data.standard.countryname + ', ' + geocode.data.standard.postal : checkPeternakan.dataValues.alamat_postcode,
         }, {
             where: {id_peternakan: req.dataAuth.id_peternakan}
         });
@@ -383,7 +383,7 @@ class _auth{
                 include: [{
                     model: this.db.Peternakan,
                     as: 'peternakan',
-                    attributes: ['id_peternakan', 'nama_peternakan', 'alamat', 'postcode']
+                    attributes: ['id_peternakan', 'nama_peternakan', 'alamat', 'postcode', 'alamat_postcode']
                 }],
                 where : {
                     id_user: req.dataAuth.id_user

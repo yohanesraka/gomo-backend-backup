@@ -13,11 +13,12 @@ module.exports = {
 
   // configuration verification email
   auth:{
-    email: "cs.gembala@gmail.com",
-    password: "CS.Gembala",
-    password_app: "rvdkurrjeliffqwj",
-    url_redirect_verify: "http://localhost:51001/verify/success-verify"
+    email: "gomosembada@gmail.com",
+    password: "sembadabisa22",
+    password_app: "jjjwoylbzudzcpkm",
+    url_redirect_verify: "http://localhost:51001/verify/success-veriy"
   },
+
 
   // Configuration premium account
   premiumFarm:{

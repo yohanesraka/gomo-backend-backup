@@ -3,15 +3,14 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-   
     await queryInterface.createTable('d_perkawinan', {
       id_perkawinan: {
         type: Sequelize.INTEGER,
-        primaryKey: true,
         allowNull: false,
-        autoIncrement: true
+        autoIncrement: true,
+        primaryKey: true
       },
-      id_peternakan:{
+      id_peternakan: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
@@ -43,21 +42,25 @@ module.exports = {
       },
       id_kandang: {
         type: Sequelize.INTEGER,
-        allowNull: true,
+        allowNull: false,
         references: {
           model: 'd_kandang',
           key: 'id_kandang'
         },
         onUpdate: 'CASCADE',
-        onDelete: 'SET NULL'
+        onDelete: 'CASCADE'
       },
       tanggal_perkawinan: {
         type: Sequelize.DATE,
-        allowNull: true
+        allowNull: false
       },
       status: {
         type: Sequelize.ENUM,
-        values: ['Bunting', 'Tidak Bunting'],
+        values: [
+          'Bunting',
+          'Tidak Bunting',
+          'Abortus',
+        ],
         allowNull: true
       },
       usg_1: {
@@ -83,9 +86,7 @@ module.exports = {
     });
   },
 
-  async down(queryInterface, Sequelize) {
-
+  async down (queryInterface, Sequelize) {
     await queryInterface.dropTable('d_perkawinan');
-
   }
 };

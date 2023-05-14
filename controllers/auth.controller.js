@@ -27,7 +27,7 @@ const authController = (db) =>{
      *
      * @param {string} username
      * @param {string} email
-     * @param {string} nomor_telepon
+     * @param {string} no_hp
      * @param {string} alamat
      * @param {string} password
      * @param {string} repeat_password
@@ -94,7 +94,7 @@ const authController = (db) =>{
      * @param {string} nama_lengkap
      * @param {string} username
      * @param {string} email
-     * @param {string} nomor_telepon
+     * @param {string} no_hp
      * @param {string} alamat
      */
 
@@ -137,7 +137,7 @@ const authController = (db) =>{
      */
     AuthController.get('/verify-account', async (req, res, next) => {
         const activateAccount = await s$auth.verifyAccount(req.query.token);
-        // response.sendResponse(res, activateAccount);
+        response.sendResponse(res, activateAccount);
         res.redirect(auth.url_redirect_verify);
     });
 

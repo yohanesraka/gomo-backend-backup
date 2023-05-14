@@ -20,12 +20,12 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE'
       },
-      id_fase: {
+      id_fp: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
           model: 'd_fase',
-          key: 'id_fase'
+          key: 'id_fp'
         },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE'

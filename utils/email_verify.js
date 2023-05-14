@@ -12,7 +12,7 @@ const verifyNewAccount = async (dataAuth) => {
             message: 'verification'
         }, config.jwt.secret, {expiresIn: '1h'});
 
-    const link = `${config.url}/api/auth/verify-account?token=${token}`;
+    const link = `${process.env.URL}/api/auth/verify-account?token=${token}`;
     message = `<h1>VERIFY ACCOUNT GOMO</h1>
                 <h2>Hi ${dataAuth.nama_pengguna}</h2>
                 <p>We just need to verify your email address before you can access <strong>GomoApp</strong>.<br>

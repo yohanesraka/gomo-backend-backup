@@ -2,9 +2,9 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up(queryInterface, Sequelize) {
+  async up (queryInterface, Sequelize) {
     await queryInterface.createTable('auth_users', {
-      id_user: {
+      id_user:{
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -14,38 +14,38 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: true
       },
-      nama_pengguna: {
+      nama_pengguna:{
+        type: Sequelize.STRING,
+        allowNull: true,
+        unique: true
+      },
+      email:{
         type: Sequelize.STRING,
         allowNull: false,
         unique: true
       },
-      email: {
+      nomor_telepon:{
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: true,
         unique: true
       },
-      kata_sandi: {
+      kata_sandi:{
         type: Sequelize.STRING,
         allowNull: false
       },
-      role: {
+      role:{
         type: Sequelize.ENUM,
         values: ['superadmin', 'admin', 'bod'],
         defaultValue: 'admin',
         allowNull: false
       },
-      nomor_telepon: {
-        type: Sequelize.STRING,
-        allowNull: true,
-        unique: true
-      },
-      status: {
+      status:{
         type: Sequelize.ENUM,
         values: ['active', 'inactive'],
         defaultValue: 'inactive',
         allowNull: false
       },
-      id_peternakan: {
+      id_peternakan:{
         type: Sequelize.INTEGER,
         allowNull: true,
         references: {
@@ -55,16 +55,16 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE'
       },
-      lastAccess: {
+      lastAccess:{
         type: Sequelize.DATE,
         allowNull: true
       },
-      createdAt: {
+      createdAt:{
         type: Sequelize.DATE,
         defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
         allowNull: false
       },
-      updatedAt: {
+      updatedAt:{
         type: Sequelize.DATE,
         defaultValue: Sequelize.literal('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
         allowNull: false
@@ -72,7 +72,7 @@ module.exports = {
     });
   },
 
-  async down(queryInterface, Sequelize) {
+  async down (queryInterface, Sequelize) {
     await queryInterface.dropTable('auth_users');
   }
 };

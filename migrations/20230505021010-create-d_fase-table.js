@@ -2,10 +2,9 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up(queryInterface, Sequelize) {
-
+  async up (queryInterface, Sequelize) {
     await queryInterface.createTable('d_fase', { 
-      id_fase:{
+      id_fp:{
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -26,12 +25,9 @@ module.exports = {
         defaultValue: Sequelize.literal('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
       }  
     });
-
   },
 
-  async down(queryInterface, Sequelize) {
-
+  async down (queryInterface, Sequelize) {
     await queryInterface.dropTable('d_fase');
-
   }
 };

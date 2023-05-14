@@ -1,0 +1,703 @@
+Mon May 08 2023 21:10:52 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] connect ECONNREFUSED ::1:3306  SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:305:26
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:30:35) Mon May 08 2023 21:12:04 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Username sudah terdaftar  Error: Username sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:89:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:37:26 Mon May 08 2023 21:12:15 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Email tidak terdaftar  Error: Email tidak terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:31:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:23 Tue May 09 2023 09:42:24 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Nomor telepon sudah terdaftar  Error: Nomor telepon sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:93:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:37:26 Tue May 09 2023 09:57:32 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Akun anda belum aktif, silahkan cek email anda untuk aktivasi  Error: Akun anda belum aktif, silahkan cek email anda untuk aktivasi
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:36:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:23 Tue May 09 2023 09:58:04 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Akun anda belum aktif, silahkan cek email anda untuk aktivasi  Error: Akun anda belum aktif, silahkan cek email anda untuk aktivasi
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:36:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:23 Tue May 09 2023 10:02:04 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Username sudah terdaftar  Error: Username sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:89:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:37:26 Tue May 09 2023 10:07:33 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Akun anda belum aktif, silahkan cek email anda untuk aktivasi  Error: Akun anda belum aktif, silahkan cek email anda untuk aktivasi
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:36:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:23 Tue May 09 2023 10:09:07 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Akun anda belum aktif, silahkan cek email anda untuk aktivasi  Error: Akun anda belum aktif, silahkan cek email anda untuk aktivasi
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:36:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:23 Wed May 10 2023 22:32:40 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Akun anda belum aktif, silahkan cek email anda untuk aktivasi  Error: Akun anda belum aktif, silahkan cek email anda untuk aktivasi
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:36:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:23 Wed May 10 2023 22:33:23 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Akun anda belum aktif, silahkan cek email anda untuk aktivasi  Error: Akun anda belum aktif, silahkan cek email anda untuk aktivasi
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:36:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:23 Wed May 10 2023 22:34:49 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Username sudah terdaftar  Error: Username sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:89:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:37:26 Wed May 10 2023 22:34:56 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Username sudah terdaftar  Error: Username sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:89:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:37:26 Wed May 10 2023 22:35:02 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Akun anda belum aktif, silahkan cek email anda untuk aktivasi  Error: Akun anda belum aktif, silahkan cek email anda untuk aktivasi
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:36:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:23 Wed May 10 2023 22:35:07 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Email tidak terdaftar  Error: Email tidak terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:31:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:23 Thu May 11 2023 08:50:28 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] Username sudah terdaftar  Error: Username sudah terdaftar
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:89:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:37:26 Thu May 11 2023 08:51:57 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] "email" is required  Error: "email" is required
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:27:24)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:36
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:280:10) Thu May 11 2023 08:52:50 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] "email" is required  Error: "email" is required
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:27:24)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:36
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:280:10) Thu May 11 2023 09:01:09 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] "email" is required  Error: "email" is required
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:27:24)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:36
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:280:10) Thu May 11 2023 09:02:45 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] "email" is required  Error: "email" is required
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:27:24)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:36
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:280:10) Thu May 11 2023 09:03:41 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] "kata_sandi" is required  Error: "kata_sandi" is required
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:27:24)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:36
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:280:10) Thu May 11 2023 09:03:56 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Akun anda belum aktif, silahkan cek email anda untuk aktivasi  Error: Akun anda belum aktif, silahkan cek email anda untuk aktivasi
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:36:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:23 Thu May 11 2023 10:53:10 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] jwt expired  TokenExpiredError: jwt expired
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/jsonwebtoken/verify.js:152:21
+    at getSecret (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/jsonwebtoken/verify.js:90:14)
+    at module.exports [as verify] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/jsonwebtoken/verify.js:94:10)
+    at _auth.verifyAccount (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:410:33)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:139:46
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/express/lib/router/index.js:284:15 Thu May 11 2023 11:29:55 GMT+0700 (Western Indonesia Time) - 400 - [Register Service] "nama_pengguna" is required  Error: "nama_pengguna" is required
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.register (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:85:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:37:26 Sun May 14 2023 09:41:09 GMT+0700 (Western Indonesia Time) - 400 - [Login Service] Akun anda belum aktif, silahkan cek email anda untuk aktivasi  Error: Akun anda belum aktif, silahkan cek email anda untuk aktivasi
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.login (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:36:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:21:23 Sun May 14 2023 10:03:14 GMT+0700 (Western Indonesia Time) - 400 - [VerifyAccount Service] Akun sudah aktif  Error: Akun sudah aktif
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.verifyAccount (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:415:56)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:139:33 Sun May 14 2023 10:05:18 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'id_fp' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Fase.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async Fase.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1240:12)
+    at async _dashboard.getTotalTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:138:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:50:22 Sun May 14 2023 10:05:18 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'id_fp' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Fase.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async _dashboard.getTotalTernakByFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:172:26)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:58:22 Sun May 14 2023 10:05:18 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:34:22 Sun May 14 2023 10:05:18 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:66:22 Sun May 14 2023 10:05:18 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/jenis_kandang.controller.js:16:24 Sun May 14 2023 10:05:32 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 10:05:33 GMT+0700 (Western Indonesia Time) - 404 - [getPenyakit Service] Data Penyakit tidak ditemukan  Error: Data Penyakit tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _penyakit.getPenyakit (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/penyakit.service.js:14:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/penyakit.controller.js:15:24 Sun May 14 2023 10:05:35 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.image' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ternak.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:46:26)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 10:06:37 GMT+0700 (Western Indonesia Time) - 404 - [getBangsa] Data Bangsa tidak ditemukan  Error: Data Bangsa tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _bangsa.getBangsa (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/bangsa.service.js:15:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/bangsa.controller.js:15:24 Sun May 14 2023 10:06:37 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Fase.id_fp' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Fase.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async _fase.getFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/fase.service.js:13:26)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/fase.controller.js:16:24 Sun May 14 2023 10:06:38 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'ternak.rf_id' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Kandang.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/kandang.service.js:16:26)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/kandang.controller.js:16:24 Sun May 14 2023 10:06:38 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 10:06:38 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:849:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:40:24 Sun May 14 2023 10:06:38 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/status.controller.js:16:24 Sun May 14 2023 10:06:44 GMT+0700 (Western Indonesia Time) - 404 - [getBangsa] Data Bangsa tidak ditemukan  Error: Data Bangsa tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _bangsa.getBangsa (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/bangsa.service.js:15:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/bangsa.controller.js:15:24 Sun May 14 2023 10:06:44 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Fase.id_fp' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Fase.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async _fase.getFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/fase.service.js:13:26)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/fase.controller.js:16:24 Sun May 14 2023 10:06:44 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'ternak.rf_id' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Kandang.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/kandang.service.js:16:26)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/kandang.controller.js:16:24 Sun May 14 2023 10:06:44 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 10:06:44 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:849:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:40:24 Sun May 14 2023 10:06:44 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/status.controller.js:16:24 Sun May 14 2023 10:07:10 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'rf_id' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ternak.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async Ternak.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1240:12)
+    at async _ternak.createTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:441:28)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:64:21 Sun May 14 2023 10:07:10 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.image' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ternak.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:46:26)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 10:07:25 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'rf_id' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ternak.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async Ternak.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1240:12)
+    at async _ternak.createTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:441:28)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:64:21 Sun May 14 2023 10:07:25 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.image' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ternak.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:46:26)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 10:16:31 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'id_fp' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Fase.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async Fase.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1240:12)
+    at async _dashboard.getTotalTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:138:35)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:50:22 Sun May 14 2023 10:16:31 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'id_fp' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Fase.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async _dashboard.getTotalTernakByFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:172:26)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:58:22 Sun May 14 2023 10:16:31 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:66:22 Sun May 14 2023 10:16:31 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:34:22 Sun May 14 2023 10:16:31 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/jenis_kandang.controller.js:16:24 Sun May 14 2023 10:16:39 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.createdAt' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ternak.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:46:26)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 10:16:41 GMT+0700 (Western Indonesia Time) - 404 - [getBangsa] Data Bangsa tidak ditemukan  Error: Data Bangsa tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _bangsa.getBangsa (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/bangsa.service.js:15:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/bangsa.controller.js:15:24 Sun May 14 2023 10:16:41 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Fase.id_fp' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Fase.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async _fase.getFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/fase.service.js:13:26)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/fase.controller.js:16:24 Sun May 14 2023 10:16:41 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/kandang.controller.js:16:24 Sun May 14 2023 10:16:41 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 10:16:41 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:849:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:40:24 Sun May 14 2023 10:16:41 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/status.controller.js:16:24 Sun May 14 2023 10:17:29 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'id_fp' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ternak.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async Ternak.findOne (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1240:12)
+    at async _ternak.createTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:441:28)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:64:21 Sun May 14 2023 10:17:29 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.createdAt' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ternak.findAll (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1140:21)
+    at async _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:46:26)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 10:42:28 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:34:22 Sun May 14 2023 10:42:28 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernak Service] Fase Pemasukan tidak ditemukan  Error: Fase Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:139:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:50:22 Sun May 14 2023 10:42:28 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:173:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:58:22 Sun May 14 2023 10:42:28 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/jenis_kandang.controller.js:16:24 Sun May 14 2023 10:42:28 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:66:22 Sun May 14 2023 10:42:37 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 10:42:39 GMT+0700 (Western Indonesia Time) - 404 - [getBangsa] Data Bangsa tidak ditemukan  Error: Data Bangsa tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _bangsa.getBangsa (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/bangsa.service.js:15:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/bangsa.controller.js:15:24 Sun May 14 2023 10:42:39 GMT+0700 (Western Indonesia Time) - 404 - [getFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _fase.getFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/fase.service.js:43:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/fase.controller.js:16:24 Sun May 14 2023 10:42:39 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/kandang.controller.js:16:24 Sun May 14 2023 10:42:39 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 10:42:39 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:849:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:40:24 Sun May 14 2023 10:42:39 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/status.controller.js:16:24 Sun May 14 2023 10:43:11 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Cannot add or update a child row: a foreign key constraint fails (`gomo_db`.`s_ternak`, CONSTRAINT `s_ternak_ibfk_5` FOREIGN KEY (`id_fp`) REFERENCES `d_fase` (`id_fp`) ON DELETE SET NULL ON UPDATE CASCADE)  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:2490:35)
+    at async Ternak.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1362:12)
+    at async _ternak.createTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:448:25)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:64:21 Sun May 14 2023 10:43:11 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 10:51:49 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:34:22 Sun May 14 2023 10:51:49 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernak Service] Fase Pemasukan tidak ditemukan  Error: Fase Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:139:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:50:22 Sun May 14 2023 10:51:49 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/jenis_kandang.controller.js:16:24 Sun May 14 2023 10:51:49 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:66:22 Sun May 14 2023 10:51:49 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:173:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:58:22 Sun May 14 2023 10:51:56 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 10:51:57 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 10:52:00 GMT+0700 (Western Indonesia Time) - 404 - [getBangsa] Data Bangsa tidak ditemukan  Error: Data Bangsa tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _bangsa.getBangsa (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/bangsa.service.js:15:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/bangsa.controller.js:15:24 Sun May 14 2023 10:52:00 GMT+0700 (Western Indonesia Time) - 404 - [getFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _fase.getFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/fase.service.js:43:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/fase.controller.js:16:24 Sun May 14 2023 10:52:00 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/kandang.controller.js:16:24 Sun May 14 2023 10:52:00 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 10:52:00 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:849:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:40:24 Sun May 14 2023 10:52:00 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/status.controller.js:16:24 Sun May 14 2023 10:59:24 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 11:30:02 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 11:30:17 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:34:22 Sun May 14 2023 11:30:17 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernak Service] Fase Pemasukan tidak ditemukan  Error: Fase Pemasukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:139:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:50:22 Sun May 14 2023 11:30:17 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:173:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:58:22 Sun May 14 2023 11:30:17 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:66:22 Sun May 14 2023 11:30:17 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/jenis_kandang.controller.js:16:24 Sun May 14 2023 11:30:24 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 11:30:25 GMT+0700 (Western Indonesia Time) - 404 - [getFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _fase.getFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/fase.service.js:43:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/fase.controller.js:16:24 Sun May 14 2023 11:30:25 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/kandang.controller.js:16:24 Sun May 14 2023 11:30:25 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 11:30:26 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:849:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:40:24 Sun May 14 2023 11:30:26 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/status.controller.js:16:24 Sun May 14 2023 11:30:55 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 12:50:48 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 12:50:56 GMT+0700 (Western Indonesia Time) - 404 - [getFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _fase.getFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/fase.service.js:43:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/fase.controller.js:16:24 Sun May 14 2023 12:50:56 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/kandang.controller.js:16:24 Sun May 14 2023 12:50:56 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 12:50:56 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:849:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:40:24 Sun May 14 2023 12:50:56 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/status.controller.js:16:24 Sun May 14 2023 12:56:52 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 12:56:56 GMT+0700 (Western Indonesia Time) - 404 - [getFase Service] Data Fase tidak ditemukan  Error: Data Fase tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _fase.getFase (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/fase.service.js:43:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/fase.controller.js:16:24 Sun May 14 2023 12:56:56 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/kandang.controller.js:16:24 Sun May 14 2023 12:56:56 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 12:56:56 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:849:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:40:24 Sun May 14 2023 12:56:56 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/status.controller.js:16:24 Sun May 14 2023 12:59:49 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 13:00:26 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:34:22 Sun May 14 2023 13:00:26 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:66:22 Sun May 14 2023 13:00:26 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/jenis_kandang.controller.js:16:24 Sun May 14 2023 13:04:34 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:34:22 Sun May 14 2023 13:04:34 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:66:22 Sun May 14 2023 13:04:34 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/jenis_kandang.controller.js:16:24 Sun May 14 2023 13:05:38 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByStatus Service] Data Status Ternak Cempe tidak ditemukan  Error: Data Status Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:28:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:34:22 Sun May 14 2023 13:05:38 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:241:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:66:22 Sun May 14 2023 13:05:38 GMT+0700 (Western Indonesia Time) - 404 - [getJenisKandang Service] Data Jenis Kandang tidak ditemukan  Error: Data Jenis Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _jenisKandang.getJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/jenis_kandang.service.js:17:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/jenis_kandang.controller.js:16:24 Sun May 14 2023 13:14:15 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 13:14:18 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/kandang.controller.js:16:24 Sun May 14 2023 13:14:18 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 13:14:18 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:849:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:40:24 Sun May 14 2023 13:14:18 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/status.controller.js:16:24 Sun May 14 2023 13:26:03 GMT+0700 (Western Indonesia Time) - 400 - [VerifyAccount Service] Akun sudah aktif  Error: Akun sudah aktif
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.verifyAccount (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:415:56)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:139:33 Sun May 14 2023 13:26:45 GMT+0700 (Western Indonesia Time) - 400 - [VerifyAccount Service] Akun sudah aktif  Error: Akun sudah aktif
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _auth.verifyAccount (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/auth.service.js:415:56)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/auth.controller.js:139:33 Sun May 14 2023 13:31:34 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 13:31:38 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/kandang.controller.js:16:24 Sun May 14 2023 13:31:38 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 13:31:38 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:849:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:40:24 Sun May 14 2023 13:31:38 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/status.controller.js:16:24 Sun May 14 2023 13:37:57 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 13:38:07 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/kandang.controller.js:16:24 Sun May 14 2023 13:38:07 GMT+0700 (Western Indonesia Time) - 500 - [getDataIndukan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:709:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 13:38:07 GMT+0700 (Western Indonesia Time) - 500 - [getDataPejantan Service] Gagal mendapatkan data status ternak  Error: Gagal mendapatkan data status ternak
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:849:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:40:24 Sun May 14 2023 13:38:07 GMT+0700 (Western Indonesia Time) - 404 - [getStatus Service] Data Status tidak ditemukan  Error: Data Status tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _status.getStatus (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/status.service.js:16:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/status.controller.js:16:24 Sun May 14 2023 13:57:20 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:245:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:66:22 Sun May 14 2023 13:57:20 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _dashboard.getADGCempe (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/web_dash.service.js:323:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/web_dash.controller.js:74:22 Sun May 14 2023 13:57:24 GMT+0700 (Western Indonesia Time) - 404 - [getTernak Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getTernak (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:224:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:16:24 Sun May 14 2023 13:57:26 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/kandang.controller.js:16:24 Sun May 14 2023 13:57:26 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:789:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:32:24 Sun May 14 2023 13:57:26 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/ternak.service.js:925:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/ternak.controller.js:40:24 

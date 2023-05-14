@@ -2,41 +2,44 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up(queryInterface, Sequelize) {
-
+  async up (queryInterface, Sequelize) {
     await queryInterface.createTable('d_peternakan', {
       id_peternakan: {
         type: Sequelize.INTEGER,
-        primaryKey: true,
         allowNull: false,
-        autoIncrement: true
+        autoIncrement: true,
+        primaryKey: true,
       },
       nama_peternakan: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       alamat: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
-      subscribe: {
+      subscribe:{
         type: Sequelize.DATE,
         allowNull: true
       },
       longitude: {
         type: Sequelize.STRING,
-        allowNull: true
+        allowNull: true,
       },
       latitude: {
         type: Sequelize.STRING,
-        allowNull: true
+        allowNull: true,
       },
-      postcode: {
+      postcode:{
         type: Sequelize.STRING,
-        allowNull: true
+        allowNull: true,
       },
-      token :{
-        type: Sequelize.STRING, 
+      alamat_postcode: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      token: {
+        type: Sequelize.STRING,
         allowNull: true
       },
       createdAt: {
@@ -44,7 +47,7 @@ module.exports = {
         allowNull: false,
         defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
-      updatedAt: {
+      updatedAt:{
         type: Sequelize.DATE,
         allowNull: false,
         defaultValue: Sequelize.literal('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
@@ -52,10 +55,7 @@ module.exports = {
     });
   },
 
-  async down(queryInterface, Sequelize) {
-
+  async down (queryInterface, Sequelize) {
     await queryInterface.dropTable('d_peternakan');
-
   }
-
 };
