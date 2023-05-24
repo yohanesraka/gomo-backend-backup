@@ -55,7 +55,7 @@ module.exports = {
         type: Sequelize.FLOAT,
         allowNull: true
       },
-      tanggal_prduksi: {
+      tanggal_produksi: {
         type: Sequelize.DATE,
         allowNull: false
       },
