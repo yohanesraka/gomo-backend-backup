@@ -27,67 +27,67 @@ const formInputController = (db) => {
     /**
     //  * Get List Status
     // */
-    //  FormInputController.get('/status', authentication, adminMiddleware, async (req, res, next) => {
-    //     const detail = await s$status.getStatus(req);
-    //     response.sendResponse(res, detail);
-    // } );
+     FormInputController.get('/status', authentication, adminMiddleware, async (req, res, next) => {
+        const detail = await s$status.getStatus(req);
+        response.sendResponse(res, detail);
+    } );
 
     // /**
     // * Get List Kandang (use query)
     // */
 
-    // FormInputController.get('/kandang', authentication, adminMiddleware, async (req, res, next) => {
-    //     const detail = await s$kandang.getKandang(req);
-    //     response.sendResponse(res, detail);
-    // } );
+    FormInputController.get('/kandang', authentication, adminMiddleware, async (req, res, next) => {
+        const detail = await s$kandang.getKandang(req);
+        response.sendResponse(res, detail);
+    } );
 
     // /**
     // * Get Jenis Pakan
     // */
-    // FormInputController.get('/jenis-pakan', authentication, adminMiddleware, async (req, res) => {
-    //     const data = await s$pakan.getJenisPakan(req);
-    //     return response.sendResponse(res, data);
-    // });
+    FormInputController.get('/jenis-pakan', authentication, adminMiddleware, async (req, res) => {
+        const data = await s$pakan.getJenisPakan(req);
+        return response.sendResponse(res, data);
+    });
 
     // /**
     // * Get List Penyakit
     // */
-    // FormInputController.get('/penyakit', authentication, adminMiddleware, async (req, res, next) => {
-    //     const detail = await s$penyakit.getPenyakit(req);
-    //     response.sendResponse(res, detail);
-    // } );
+    FormInputController.get('/penyakit', authentication, adminMiddleware, async (req, res, next) => {
+        const detail = await s$penyakit.getPenyakit(req);
+        response.sendResponse(res, detail);
+    } );
 
     // /**
     // * Get List Jenis Kandang
     // */
-    // FormInputController.get('/jenis-kandang', authentication, adminMiddleware, async (req, res, next) => {
-    //     const detail = await s$jenisKandang.getJenisKandang(req);
-    //     response.sendResponse(res, detail);
-    // } );
+    FormInputController.get('/jenis-kandang', authentication, adminMiddleware, async (req, res, next) => {
+        const detail = await s$jenisKandang.getJenisKandang(req);
+        response.sendResponse(res, detail);
+    } );
 
     // /**
     // * Get data indukan
     // */
-    // FormInputController.get('/indukan', authentication, adminMiddleware, async (req, res, next) => {
-    //     const detail = await s$ternak.getDataIndukanFormInput(req);
-    //     response.sendResponse(res, detail);
-    // } );
+    FormInputController.get('/indukan', authentication, adminMiddleware, async (req, res, next) => {
+        const detail = await s$ternak.getDataIndukanFormInput(req);
+        response.sendResponse(res, detail);
+    } );
 
     // /**
     // * Get data pejantan
     // */
-    // FormInputController.get('/pejantan', authentication, adminMiddleware, async (req, res, next) => {
-    //     const detail = await s$ternak.getDataPejantanFormInput(req);
-    //     response.sendResponse(res, detail);
-    // } );
+    FormInputController.get('/pejantan', authentication, adminMiddleware, async (req, res, next) => {
+        const detail = await s$ternak.getDataPejantanFormInput(req);
+        response.sendResponse(res, detail);
+    } );
 
     // /**
     // * Get Data Bangsa
     // */
-    // FormInputController.get('/bangsa', authentication, adminMiddleware, async (req, res, next) => {
-    //     const detail = await s$bangsa.getBangsa(req);
-    //     response.sendResponse(res, detail);
-    // });
+    FormInputController.get('/bangsa', authentication, adminMiddleware, async (req, res, next) => {
+        const detail = await s$bangsa.getBangsa(req);
+        response.sendResponse(res, detail);
+    });
 
     /**
      * Get Data Form Input
