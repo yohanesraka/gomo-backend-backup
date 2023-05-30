@@ -34,6 +34,11 @@ const produksiController = (db) =>{
         // console.log(res);
     });
 
+    ProduksiController.put('/', authentication, adminMiddleware, async (req, res, next) =>{
+        const edit = await s$produksi.updateDataProduksi(req);
+        response.sendResponse(req, edit);
+    });
+
     
 
     return ProduksiController;

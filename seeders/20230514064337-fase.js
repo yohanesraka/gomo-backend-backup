@@ -24,6 +24,15 @@ module.exports = {
       },
       {
         fase: "Melahirkan"
+      },  
+      {
+        fase: "Waiting List Perkawinan"
+      },
+      {
+        fase: "Laktasi"
+      },
+      {
+        fase: "Kelahiran"
       },
       {
         fase: "Kosong"

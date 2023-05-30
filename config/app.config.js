@@ -16,7 +16,7 @@ module.exports = {
     email: "gomosembada@gmail.com",
     password: "sembadabisa22",
     password_app: "jjjwoylbzudzcpkm",
-    url_redirect_verify: "http://localhost:51001/verify/success-veriy"
+    url_redirect_verify: "http://localhost:51001/verify/success-verify"
   },
 
 

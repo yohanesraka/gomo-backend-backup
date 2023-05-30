@@ -46,6 +46,7 @@ class _produksiSusu{
 
     //Create Data Produksi
     createDataProduksi = async (req) => {
+        const t = await this.db.sequelize.transaction();
         try{
             const schema = joi.object({
                 id_produksi_susu: joi.number().required(),
@@ -78,6 +79,7 @@ class _produksiSusu{
                 tanggal_produksi: value.tanggal_produksi
             });
             if (!add) newError(500, 'Gagal menambahkan Produksi Susu','createProduksiSusu Service')
+            await t.commit()
             return{
                 code: 200,
                 data: {
@@ -87,13 +89,14 @@ class _produksiSusu{
     
         }catch (error){
             // console.log(error)
+            await t.rollback();
             return errorHandler(error)
-            // throw error
         }
     }
 
     //Update Data Produksi
     updateDataProduksi = async (req)=>{
+        const t = await this.db.sequelize.transaction();
         try{
             const schema = joi.object({
                 id_produksi_susu: joi.number().required(),
@@ -118,14 +121,29 @@ class _produksiSusu{
             if(!dataProduksi) newError(404,'Data Produksi tidak ditemukan', 'updateDataProduksi Service');
 
 
-
             //Update Data Produksi
             const update = await this.db.ProduksiSusu.update({
-                id_ternak: value.id_ternak || dataProduksi.dataValues.id_ternak,
+                // id_ternak: value.id_ternak || dataProduksi.dataValues.id_ternak,
+                // id_peternakan: value.id_peternakan || data.dataValues.id_peternakan,
+                id_fp: value.id_fp || data.dataValues.id_fp,
+                produksi_pagi: value.produksi_pagi || data.dataValues.produksi_pagi,
+                produksi_sore: value.produksi_sore || data.dataValues.produksi_sore,
+                total_harian: value.total || data.dataValues.total_harian,
+                tanggal_produksi: value.tanggal_produksi || data.dataValues.tanggal_produksi
                 
+            },{
+                where :{
+                    id_produksi_susu: value.id_produksi_susu,
+                    id_peternakan: req.dataAuth.id_peternakan,
+                    id_ternak: value.id_ternak
+                },
+                transaction: t
             });
+            if (update <= 0) newError(500, 'Gagal update Produksi Susu', 'updateDataProduksi Service');
+
         }catch (error){
-            return errorHandler(error)
+            await t.rollback();
+            return errorHandler(error);
         }
     } 
 }
