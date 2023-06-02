@@ -20,7 +20,6 @@ const produksiController = (db) =>{
      * @param {number} id_peternakan
      * @param {number} id_produksi_susu
      * @param {number} id_ternak
-     * @param {number} id_fp
      * @param {string} produksi_pagi
      * @param {string} produksi_sore
      * @param {string} total_harian
