@@ -38,8 +38,10 @@ class ExportToExcelService {
                 const produksiPagi = ProduksiHarian.reduce((acc, row) => acc + row.produksi_pagi, 0);
                 // produksi sore
                 const produksiSore = ProduksiHarian.reduce((acc, row) => acc + row.produksi_sore, 0);
+                console.log(produksiPagi + produksiSore);
+                console.log("ternak", listTernak.length);
                 // average harian
-                const average = (produksiPagi + produksiSore) / 2;
+                const average = (produksiPagi + produksiSore) / listTernak.length;
                 // total harian per ternak urut berdasarkan id ternak (ASC) jika kosong maka 0
                 const totalHarianPerTernak = listTernak.map((ternak) => {
                     const ternakProduksi = ProduksiHarian.find((row) => row.id_ternak === ternak.id_ternak);
@@ -58,27 +60,37 @@ class ExportToExcelService {
                     dataPerTernak.push(totalHarianPerTernak[i]);
                     dataPerTernak.push(faseTernakPerTernak[i]);
                 }
-                const dataRow = worksheet.addRow([index + 1, date, "-", "-", average, ...dataPerTernak]);
+                const dataRow = worksheet.addRow([index + 1, date, "-", 1724, average, ...dataPerTernak]);
 
                 formatDataRow(worksheet, dataRow);
             });
 
-            // buatkan kondisi pada kolom ke 5 jika value kurang dari 5000 maka berwarna merah jika lebih dari 5000 maka berwarna hijau
-
             worksheet.eachRow((row, rowNumber) => {
                 if (rowNumber > 1) {
-                    const avg = row.getCell(5);
-                    if (avg.value < 5000) {
-                        avg.fill = {
-                            type: "pattern",
-                            pattern: "solid",
-                            fgColor: { argb: "FFFF0000" },
-                        };
-                    } else {
-                        avg.fill = {
+                    const avgCell = row.getCell(5);
+                    const avgCellValue = avgCell.value;
+                    const avgCellPrev = row.getCell(4);
+                    const avgCellPrevValue = avgCellPrev.value;
+
+                    if (avgCellValue === avgCellPrevValue) {
+                        avgCell.fill = {
                             type: "pattern",
                             pattern: "solid",
                             fgColor: { argb: "FF00FF00" },
+                        };
+                    } else if (avgCellValue < avgCellPrevValue) {
+                        const color = Math.round((avgCellValue / avgCellPrevValue) * 255);
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: `FFFF${color.toString(16)}00` },
+                        };
+                    } else if (avgCellValue > avgCellPrevValue) {
+                        const color = Math.round((avgCellPrevValue / avgCellValue) * 255);
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: `FF00${color.toString(16)}FF` },
                         };
                     }
 
@@ -116,30 +128,61 @@ class ExportToExcelService {
                         }
                     });
 
-                    // Menerapkan kondisi pada kolom idTernak
-                    // faseTernak.forEach((columnIndex) => {
-                    //     const faseTernakCell = row.getCell(columnIndex);
-
-                    //     if (faseTernakCell.value === "1") {
-                    //         faseTernakCell.fill = {
-                    //             type: "pattern",
-                    //             pattern: "solid",
-                    //             fgColor: { argb: "FFFF0000" },
-                    //         };
-                    //     } else if (faseTernakCell.value === "2") {
-                    //         faseTernakCell.fill = {
-                    //             type: "pattern",
-                    //             pattern: "solid",
-                    //             fgColor: { argb: "FF00FF00" },
-                    //         };
-                    //     } else {
-                    //         faseTernakCell.fill = {
-                    //             type: "pattern",
-                    //             pattern: "solid",
-                    //             fgColor: { argb: "FF0000FF" },
-                    //         };
-                    //     }
-                    // });
+                    // Menerapkan kondisi pada kolom fase ternak
+                    faseTernak.forEach((columnIndex) => {
+                        const faseTernakCell = row.getCell(columnIndex);
+                        // berikan warna pada fase ternak dengan kondisi Perkawinan = pink Kebuntingan = kuning Kering = merah Pemerahan = biru muda Melahirkan = hijau Kosong = abu muda Waiting List Perkawinan = pink
+                        if (faseTernakCell.value === "Perkawinan") {
+                            faseTernakCell.fill = {
+                                type: "pattern",
+                                pattern: "solid",
+                                fgColor: { argb: "FFFF00FF" },
+                            };
+                        } else if (faseTernakCell.value === "Kebuntingan") {
+                            faseTernakCell.fill = {
+                                type: "pattern",
+                                pattern: "solid",
+                                fgColor: { argb: "FFFFFF00" },
+                            };
+                        } else if (faseTernakCell.value === "Kering") {
+                            faseTernakCell.fill = {
+                                type: "pattern",
+                                pattern: "solid",
+                                fgColor: { argb: "FFFF0000" },
+                            };
+                        } else if (faseTernakCell.value === "Pemerahan") {
+                            faseTernakCell.fill = {
+                                type: "pattern",
+                                pattern: "solid",
+                                fgColor: { argb: "FF00FFFF" },
+                            };
+                        } else if (faseTernakCell.value === "Melahirkan") {
+                            faseTernakCell.fill = {
+                                type: "pattern",
+                                pattern: "solid",
+                                fgColor: { argb: "FF00FF00" },
+                            };
+                        } else if (faseTernakCell.value === "Kosong") {
+                            faseTernakCell.fill = {
+                                type: "pattern",
+                                pattern: "solid",
+                                fgColor: { argb: "FF808080" },
+                            };
+                        } else if (faseTernakCell.value === "Waiting List Perkawinan") {
+                            faseTernakCell.fill = {
+                                type: "pattern",
+                                pattern: "solid",
+                                fgColor: { argb: "FFFF00FF" },
+                            };
+                        } else {
+                            faseTernakCell.fill = {
+                                // tidak berikan warna pada fase ternak dengan kondisi lainnya
+                                type: "pattern",
+                                pattern: "solid",
+                                fgColor: { argb: "FFFFFFFF" },
+                            };
+                        }
+                    });
                 }
             });
 

@@ -28,7 +28,7 @@ const formatDataRow = (worksheet, dataRow) => {
 
 // Fungsi untuk menghasilkan file Excel dari workbook
 const generateExcelFile = async (workbook) => {
-    const filename = `exported_data_${Date.now()}.xlsx`;
+    const filename = `Data Produksi Susu.xlsx`;
 
     const filePath = "./public/static/" + filename;
     await workbook.xlsx.writeFile(filePath);
