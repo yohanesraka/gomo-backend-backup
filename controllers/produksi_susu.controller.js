@@ -18,11 +18,10 @@ const produksiController = (db) =>{
 
     /** 
      * @param {number} id_peternakan
-     * @param {number} id_produksi_susu
      * @param {number} id_ternak
      * @param {string} produksi_pagi
      * @param {string} produksi_sore
-     * @param {string} total_harian
+     * @param {string} kualitas
      * @param {string} tanggal_produksi
     */
 
@@ -36,6 +35,11 @@ const produksiController = (db) =>{
     ProduksiController.put('/', authentication, adminMiddleware, async (req, res, next) =>{
         const edit = await s$produksi.updateDataProduksi(req);
         response.sendResponse(req, edit);
+    });
+
+    ProduksiController.delete('/', authentication, adminMiddleware, async (req, res, next) =>{
+        const del = await s$produksi.delelteDataProduksi(req);
+        response.sendResponse(req, del);
     });
 
     

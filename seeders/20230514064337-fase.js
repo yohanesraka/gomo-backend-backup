@@ -17,26 +17,24 @@ module.exports = {
         fase: "Kebuntingan"
       },
       {
-        fase: "Kering"
-      },
-      {
-        fase: "Pemerahan"
-      },
-      {
         fase: "Melahirkan"
-      },  
+      }, 
       {
-        fase: "Waiting List Perkawinan"
+        fase: "Kosong"
       },
       {
         fase: "Laktasi"
       },
       {
-        fase: "Kelahiran"
+        fase: "Kering"
       },
       {
-        fase: "Kosong"
+        fase: "Waiting List Perkawinan"
       },
+      {
+        fase: "Kelahiran"
+      },
+     
   ], {});
 
   },
