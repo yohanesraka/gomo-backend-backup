@@ -18,51 +18,53 @@ const statusController = require("../controllers/status.controller");
 const jenisKandangController = require("../controllers/jenis_kandang.controller");
 const pemeliharaanController = require("../controllers/pemeliharaan.controller");
 const adaptasiController = require("../controllers/adaptasi.controller");
-const formInputController = require("../controllers/form_input.controller")
+const formInputController = require("../controllers/form_input.controller");
 const loggingController = require("../controllers/logging.controller");
 const kebuntinganController = require("../controllers/kebuntingan.controller");
 const riwayatPerkawinanController = require("../controllers/riwayat_perkawinan.controller");
 const riwayatKebuntinganController = require("../controllers/riwayat_kebuntingan.controller");
-const kesehatanController = require('../controllers/kesehatan.controller');
+const kesehatanController = require("../controllers/kesehatan.controller");
 const kelahiranController = require("../controllers/kelahiran.controller");
 const riwayatKelahiranController = require("../controllers/riwayat_kelahiran.controller");
 const lepasSapihController = require("../controllers/lepas_sapih.controller");
 const riwayatLepasSapihController = require("../controllers/riwayat_lepas_sapih.controller");
 const produksiSusuController = require("../controllers/produksi_susu.controller");
+const exportToExcelController = require("../controllers/export_to_excel.controller");
 
 // Define url API in here
 const _routes = [
-    ['/auth', authController],
-    ['/superadmin', superAdminController],
-    ['/kandang', kandangController],
-    ['/pakan', pakanController],
-    ['/bahan-pakan', bahanPakanController],
-    ['/fase', faseController],
-    ['/penyakit', penyakitController],
-    ['/bangsa', bangsaController],
-    ['/perkawinan', perkawinanController],
-    ['/timbangan', timbanganController],
-    ['/ternak', ternakController],
-    ['/riwayat-kesehatan', riwayatKesehatanController],
-    ['/rfid', rfidController],
-    ['/web-dash', webDashController],
-    ['/lk-pemasukan', lkPemasukanController],
-    ['/mobile-dash', mobileDashController],
-    ['/status-ternak', statusController],
-    ['/jenis-kandang', jenisKandangController],
-    ['/pemeliharaan', pemeliharaanController],
-    ['/adaptasi', adaptasiController],
-    ['/form-input', formInputController],
-    ['/logging', loggingController],
-    ['/kebuntingan', kebuntinganController],
-    ['/riwayat-perkawinan', riwayatPerkawinanController],
-    ['/riwayat-kebuntingan', riwayatKebuntinganController],
-    ['/kesehatan', kesehatanController],
-    ['/kelahiran', kelahiranController],
-    ['/riwayat-kelahiran', riwayatKelahiranController],
-    ['/lepas-sapih', lepasSapihController],
-    ['/riwayat-lepas-sapih', riwayatLepasSapihController],
-    ['/produksi-susu', produksiSusuController],
+    ["/auth", authController],
+    ["/superadmin", superAdminController],
+    ["/kandang", kandangController],
+    ["/pakan", pakanController],
+    ["/bahan-pakan", bahanPakanController],
+    ["/fase", faseController],
+    ["/penyakit", penyakitController],
+    ["/bangsa", bangsaController],
+    ["/perkawinan", perkawinanController],
+    ["/timbangan", timbanganController],
+    ["/ternak", ternakController],
+    ["/riwayat-kesehatan", riwayatKesehatanController],
+    ["/rfid", rfidController],
+    ["/web-dash", webDashController],
+    ["/lk-pemasukan", lkPemasukanController],
+    ["/mobile-dash", mobileDashController],
+    ["/status-ternak", statusController],
+    ["/jenis-kandang", jenisKandangController],
+    ["/pemeliharaan", pemeliharaanController],
+    ["/adaptasi", adaptasiController],
+    ["/form-input", formInputController],
+    ["/logging", loggingController],
+    ["/kebuntingan", kebuntinganController],
+    ["/riwayat-perkawinan", riwayatPerkawinanController],
+    ["/riwayat-kebuntingan", riwayatKebuntinganController],
+    ["/kesehatan", kesehatanController],
+    ["/kelahiran", kelahiranController],
+    ["/riwayat-kelahiran", riwayatKelahiranController],
+    ["/lepas-sapih", lepasSapihController],
+    ["/riwayat-lepas-sapih", riwayatLepasSapihController],
+    ["/produksi-susu", produksiSusuController],
+    ["/export-to-excel", exportToExcelController],
 ];
 
 const routes = (app, db) => {
@@ -70,7 +72,7 @@ const routes = (app, db) => {
     _routes.forEach((route) => {
         const [url, controller] = route;
         app.use(`/api${url}`, controller(db));
-    })
-}
+    });
+};
 
 module.exports = routes;
