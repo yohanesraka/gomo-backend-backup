@@ -57,6 +57,11 @@ module.exports = (Sequelize, DataTypes) => {
       type: DataTypes.DATE,
       allowNull: false
     },
+    kualitas: {
+      type: DataTypes.STRING,
+      defaultValue: '-',
+      allowNull: false,
+    },
     createdAt: {
       type: DataTypes.DATE,
       allowNull: false,
