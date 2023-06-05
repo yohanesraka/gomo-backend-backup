@@ -59,6 +59,11 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: false
       },
+      kualitas: {
+        type: Sequelize.STRING,
+        defaultValue: '-',
+        allowNull: false
+      },
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false,
