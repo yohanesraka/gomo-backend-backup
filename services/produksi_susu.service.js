@@ -21,7 +21,6 @@ class _produksiSusu {
 
             req.query.id_peternakan = req.dataAuth.id_peternakan;
 
-
             const list = await this.db.ProduksiSusu.findAll({
 
               //Get by id_fp
@@ -43,14 +42,11 @@ class _produksiSusu {
                 where: req.query
 
             });
-            // list.forEach(element => {
-            //     console.log(element.dataValues.id_ternak)
-            // });
 
             if (list.length <= 0) {
                 newError(404, 'Data Produksi Susu tidak ditemukan', 'getProduksiSusu');
             }
-            // console.log(list[].dataValues)
+           
             return {
                 code: 200,
                 data: {
@@ -63,62 +59,66 @@ class _produksiSusu {
         }
     }
 
-    //Create Data Produksi
     createDataProduksi = async (req) => {
-        const t = await this.db.sequelize.transaction();
-        try {
-            const schema = joi.object({
-                id_peternakan: joi.number().required(),
-                id_ternak: joi.number().required(),
-                id_fp:  joi.number().required().valid(7),
-                produksi_pagi: joi.string().required(),
-                produksi_sore: joi.string().required(),
-                produksi_sore: joi.string().required(),
-                // total_harian: joi.string().required(),
-                kualitas: joi.string().required(),
-                tanggal_produksi: joi.string().required().isoDate()
-            });
-            const {
-                error,
-                value
-            } = schema.validate(req.body);
-            // console.log(value.id_fp);
-            // console.log(value.id_peternakan);
-            if (error) {
-                newError(400, 'Ternak tidak dalam fase laktasi', 'createdProduksiSusu Service');
+      const t = await this.db.sequelize.transaction();
+      try {
+          const schema = joi.object({
+              id_peternakan: joi.number().required(),
+              id_ternak: joi.number().required(),
+              produksi_pagi: joi.string().required(),
+              produksi_sore: joi.string().required(),
+              tanggal_produksi: joi.string().required().isoDate(),
+              kualitas: joi.string().required()
+          });
+  
+          const { error, value } = schema.validate(req.body);
+          const faseTernak = await this.db.Ternak.findOne({
+            attributes: ['id_fp'],
+            where : {
+              id_fp : 7
             }
+          });
+          console.log("FASE :",faseTernak.dataValues.id_fp);
+          
 
-            //Add id_user to params
-            value.id_peternakan = req.dataAuth.id_peternakan
-            value.total_harian += value.produksi_pagi + value.produksi_sore
-
-            //Create New ProduksiSusu
-            const add = await this.db.ProduksiSusu.create({
-                id_peternakan: req.dataAuth.id_peternakan,
-                id_ternak: value.id_ternak,
-                id_fp: value.id_fp,
-                produksi_pagi: value.produksi_pagi,
-                produksi_sore: value.produksi_sore,
-                total_harian: value.total_harian,
-                kualitas: value.kualitas,
-                tanggal_produksi: value.tanggal_produksi
-            });
-            if (!add) newError(500, 'Gagal menambahkan Produksi Susu', 'createProduksiSusu Service')
-            await t.commit()
-            return {
-                code: 200,
-                data: {
-                    message: "success"
-                }
-            }
-
-        } catch (error) {
-            console.log(error)
-            await t.rollback();
-            return errorHandler(error)
-        }
-    }
-
+        if (!faseTernak) {
+              throw newError(400, 'Ternak tidak dalam fase laktasi', 'createProduksiSusu Service');
+          }
+  
+          value.id_peternakan = req.dataAuth.id_peternakan;
+          value.total_harian = (Number(value.produksi_pagi) + Number(value.produksi_sore)).toString();
+  
+          const add = await this.db.ProduksiSusu.create({
+              id_peternakan: value.id_peternakan,
+              id_ternak: value.id_ternak,
+              id_fp: faseTernak.dataValues.id_fp,
+              produksi_pagi: value.produksi_pagi,
+              produksi_sore: value.produksi_sore,
+              total_harian: value.total_harian,
+              kualitas: value.kualitas,
+              tanggal_produksi: value.tanggal_produksi
+          });
+  
+          if (!add) {
+              throw newError(500, 'Gagal menambahkan Produksi Susu', 'createProduksiSusu Service');
+          }
+  
+          await t.commit();
+  
+          return {
+              code: 200,
+              data: {
+                  message: "success"
+              }
+          };
+      } catch (error) {
+          // console.log(error);
+          await t.rollback();
+          return errorHandler(error);
+      }
+  }
+  
+  
     //Update Data Produksi
     updateDataProduksi = async (req) => {
         const t = await this.db.sequelize.transaction();
