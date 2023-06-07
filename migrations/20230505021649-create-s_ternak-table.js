@@ -92,6 +92,14 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: true
       },
+      status_perah: {
+        type: Sequelize.ENUM,
+        values: [
+          'Perah',
+          'Tidak'
+        ],
+        allowNull: false
+      },
       tanggal_keluar:{
         type: Sequelize.DATE,
         allowNull: true
