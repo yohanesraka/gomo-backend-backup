@@ -18,35 +18,23 @@ class _produksiSusu {
     //Get Data Produksi Susu
     getDataProduksi = async (req) => {
         try {
-
             req.query.id_peternakan = req.dataAuth.id_peternakan;
 
             const list = await this.db.ProduksiSusu.findAll({
 
-              //Get by id_fp
                 include: [{
                     model: this.db.Ternak,
                     as: 'ternak',
-                    where : {
-                        id_fp: 7
-                    },
-                        include: [{
-                            model: this.db.Fase,
-                            as:'fase',
-                            where: {
-                                fase : 'Laktasi'
-                            }
-                        }],      
+                    where: {
+                      status_perah : 'Perah'
+                    }
                 }],
-
                 where: req.query
-
             });
 
             if (list.length <= 0) {
                 newError(404, 'Data Produksi Susu tidak ditemukan', 'getProduksiSusu');
             }
-           
             return {
                 code: 200,
                 data: {
@@ -58,6 +46,44 @@ class _produksiSusu {
             return errorHandler(error)
         }
     }
+
+    getDataProduksiByIdTernak = async (req) => {
+      try {
+          const schema = joi.object({
+              id_ternak: joi.number().required(),
+          });
+  
+          const { error, value } = schema.validate(req.params);
+          if (error) {
+              throw new Error(error.details[0].message);
+          }
+  
+          const dataProduksi = await this.db.ProduksiSusu.findAll({
+              where: {
+                  id_produksi_susu: value.id_produksi_susu,
+                  id_peternakan: req.dataAuth.id_peternakan,
+                  id_ternak: value.id_ternak,
+              }, 
+              model: this.db.ProduksiSusu,
+              as: 'produksi_susu',
+              where: {
+                  id_ternak: value.id_ternak,
+              },
+          });
+          if (!dataProduksi) {
+            newError(404, 'Data Produksi Susu tidak ditemukan', 'getProduksiSusuByIDTernak');
+          }
+          return {
+            code: 200,
+            data: {
+                total: dataProduksi.length,
+                dataProduksi
+            }
+        }
+      } catch (error) {
+          return errorHandler()
+      }
+  };
 
     createDataProduksi = async (req) => {
       const t = await this.db.sequelize.transaction();
@@ -73,16 +99,14 @@ class _produksiSusu {
   
           const { error, value } = schema.validate(req.body);
           const faseTernak = await this.db.Ternak.findOne({
-            attributes: ['id_fp'],
+            attributes: ['status_perah'],
             where : {
-              id_fp : 7
+              status_perah : 'Perah'
             }
           });
-          console.log("FASE :",faseTernak.dataValues.id_fp);
-          
 
         if (!faseTernak) {
-              throw newError(400, 'Ternak tidak dalam fase laktasi', 'createProduksiSusu Service');
+              throw newError(400, 'Ternak tidak Siap Perah', 'createProduksiSusu Service');
           }
   
           value.id_peternakan = req.dataAuth.id_peternakan;
@@ -91,7 +115,6 @@ class _produksiSusu {
           const add = await this.db.ProduksiSusu.create({
               id_peternakan: value.id_peternakan,
               id_ternak: value.id_ternak,
-              id_fp: faseTernak.dataValues.id_fp,
               produksi_pagi: value.produksi_pagi,
               produksi_sore: value.produksi_sore,
               total_harian: value.total_harian,
@@ -108,7 +131,7 @@ class _produksiSusu {
           return {
               code: 200,
               data: {
-                  message: "success"
+                  message: "Berhasil Menambahkan Produksi Susu"
               }
           };
       } catch (error) {
@@ -118,7 +141,6 @@ class _produksiSusu {
       }
   }
   
-  
     //Update Data Produksi
     updateDataProduksi = async (req) => {
         const t = await this.db.sequelize.transaction();
@@ -127,10 +149,8 @@ class _produksiSusu {
             id_produksi_susu: joi.number().required(),
             id_peternakan: joi.number().required(),
             id_ternak: joi.number().required(),
-            id_fp: joi.number().required().valid(7),
             produksi_pagi: joi.string().required(),
             produksi_sore: joi.string().required(),
-            total_harian: joi.string().required(),
             tanggal_produksi: joi.string().required().isoDate()
           });
       
@@ -144,10 +164,11 @@ class _produksiSusu {
             }
           });
           if (!dataProduksi) newError(404, 'Data Produksi tidak ditemukan', 'updateDataProduksi Service');
-      
+          
+          value.total_harian = (Number(value.produksi_pagi) + Number(value.produksi_sore)).toString();
+  
           const update = await this.db.ProduksiSusu.update(
             {
-              id_fp: value.id_fp || dataProduksi.id_fp,
               produksi_pagi: value.produksi_pagi || dataProduksi.produksi_pagi,
               produksi_sore: value.produksi_sore || dataProduksi.produksi_sore,
               total_harian: value.total_harian || dataProduksi.total_harian,
@@ -168,7 +189,7 @@ class _produksiSusu {
           return {
             code: 200,
             data: {
-              message: "success"
+              message: "Berhasil Mengubah Data Produksi"
             }
           };
         } catch (error) {
@@ -176,6 +197,48 @@ class _produksiSusu {
           return errorHandler(error);
         }
       };
+
+      deleteDataProduksi = async (req) => {
+        const t = await this.db.sequelize.transaction();
+        try {
+          const schema = joi.object({
+            id_produksi_susu: joi.number().required(),
+          });
+      
+          const { error, value } = schema.validate(req.body);
+          if (error) newError(400, error.details[0].message, 'deleteDataProduksi');
+      
+          const dataProduksi = await this.db.ProduksiSusu.findOne({
+            where: {
+              id_produksi_susu: value.id_produksi_susu,
+              id_peternakan: req.dataAuth.id_peternakan,
+            },
+          });
+          if (!dataProduksi)
+            newError(404, 'Data Produksi tidak ditemukan', 'deleteDataProduksi Service');
+      
+          await this.db.ProduksiSusu.destroy({
+            where: {
+              id_produksi_susu: value.id_produksi_susu,
+              id_peternakan: req.dataAuth.id_peternakan,
+            },
+            transaction: t,
+          });
+      
+          await t.commit();
+          return {
+            code: 200,
+            data: {
+              message: 'Berhasil Menghapus Data Produksi',
+            },
+          };
+        } catch (error) {
+          await t.rollback();
+          return errorHandler(error);
+        }
+      };
+      
+      
       
 }
 

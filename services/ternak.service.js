@@ -51,6 +51,7 @@ class _ternak {
                     'id_sire',
                     'tanggal_lahir',
                     'tanggal_masuk',
+                    'status_perah',
                     'tanggal_keluar',
                     'status_keluar',
                     'createdAt',
