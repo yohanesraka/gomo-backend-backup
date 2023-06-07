@@ -30,16 +30,6 @@ module.exports = (Sequelize, DataTypes) => {
                 onUpdate: "CASCADE",
                 onDelete: "CASCADE",
             },
-            id_fp: {
-                type: DataTypes.INTEGER,
-                allowNull: false,
-                references: {
-                    model: "d_fase",
-                    key: "id_fp",
-                },
-                onUpdate: "CASCADE",
-                onDelete: "CASCADE",
-            },
             produksi_pagi: {
                 type: DataTypes.FLOAT,
                 allowNull: false,
@@ -76,10 +66,6 @@ module.exports = (Sequelize, DataTypes) => {
     );
 
     ProduksiSusu.associate = function (models) {
-        ProduksiSusu.belongsTo(models.Fase, {
-            foreignKey: "id_fp",
-            as: "fase",
-        });
         ProduksiSusu.belongsTo(models.Peternakan, {
             foreignKey: "id_peternakan",
             as: "peternakan",
