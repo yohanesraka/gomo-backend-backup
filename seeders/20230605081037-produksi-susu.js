@@ -9,7 +9,6 @@ module.exports = {
                 {
                     id_peternakan: 1,
                     id_ternak: 2,
-                    id_fp: 7,
                     produksi_pagi: 800,
                     produksi_sore: 1000,
                     total_harian: 1800,
@@ -19,7 +18,6 @@ module.exports = {
                 {
                     id_peternakan: 1,
                     id_ternak: 2,
-                    id_fp: 7,
                     produksi_pagi: 900,
                     produksi_sore: 1200,
                     total_harian: 2100,
@@ -29,7 +27,6 @@ module.exports = {
                 {
                     id_peternakan: 1,
                     id_ternak: 2,
-                    id_fp: 7,
                     produksi_pagi: 900,
                     produksi_sore: 1300,
                     total_harian: 2200,
@@ -39,7 +36,6 @@ module.exports = {
                 {
                     id_peternakan: 1,
                     id_ternak: 2,
-                    id_fp: 7,
                     produksi_pagi: 700,
                     produksi_sore: 1200,
                     total_harian: 1900,
@@ -49,7 +45,6 @@ module.exports = {
                 {
                     id_peternakan: 1,
                     id_ternak: 4,
-                    id_fp: 7,
                     produksi_pagi: 800,
                     produksi_sore: 1000,
                     total_harian: 1800,
@@ -59,7 +54,6 @@ module.exports = {
                 {
                     id_peternakan: 1,
                     id_ternak: 4,
-                    id_fp: 7,
                     produksi_pagi: 900,
                     produksi_sore: 1200,
                     total_harian: 2100,
@@ -69,7 +63,6 @@ module.exports = {
                 {
                     id_peternakan: 1,
                     id_ternak: 4,
-                    id_fp: 7,
                     produksi_pagi: 900,
                     produksi_sore: 1300,
                     total_harian: 2200,
@@ -79,7 +72,6 @@ module.exports = {
                 {
                     id_peternakan: 1,
                     id_ternak: 4,
-                    id_fp: 7,
                     produksi_pagi: 700,
                     produksi_sore: 1200,
                     total_harian: 1900,
