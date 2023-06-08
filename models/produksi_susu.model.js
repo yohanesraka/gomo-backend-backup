@@ -66,6 +66,10 @@ module.exports = (Sequelize, DataTypes) => {
     );
 
     ProduksiSusu.associate = function (models) {
+        ProduksiSusu.belongsTo(models.Fase, {
+            foreignKey: "id_fp",
+            as: "fase",
+        });
         ProduksiSusu.belongsTo(models.Peternakan, {
             foreignKey: "id_peternakan",
             as: "peternakan",

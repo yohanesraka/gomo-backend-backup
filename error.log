@@ -2516,4 +2516,76 @@ notNull Violation: ProduksiSusu.tanggal_prduksi cannot be null
     at async model.save (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:2490:35)
     at async ProduksiSusu.create (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/node_modules/sequelize/lib/model.js:1362:12)
     at async _produksiSusu.createDataProduksi (/Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/services/produksi_susu.service.js:96:25)
-    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/produksi_susu.controller.js:30:21 
+    at async /Users/macbook/Documents/stechoq/gomo/goat-milk-monitoring/controllers/produksi_susu.controller.js:30:21 Tue Jun 06 2023 15:49:20 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] Unknown column 'createdAt' in 'field list'  Error
+    at Query.run (D:\Project\milking\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\Project\milking\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.insert (D:\Project\milking\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\Project\milking\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\Project\milking\node_modules\sequelize\lib\model.js:1362:12)
+    at async _prediksiSusu.createDataPrediksi (D:\Project\milking\services\prediksi_susu.service.js:19:17)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:19:21 Tue Jun 06 2023 16:47:32 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] tanggal is not defined  ReferenceError: tanggal is not defined
+    at _prediksiSusu.updateDataPrediksi (D:\Project\milking\services\prediksi_susu.service.js:34:39)
+    at D:\Project\milking\controllers\prediksi_susu.controller.js:25:39
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at adminMiddleware (D:\Project\milking\middlewares\authorization.js:25:9)
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Wed Jun 07 2023 08:29:12 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] DATE is not defined  ReferenceError: DATE is not defined
+    at _prediksiSusu.updateDataPrediksi (D:\Project\milking\services\prediksi_susu.service.js:39:39)
+    at D:\Project\milking\controllers\prediksi_susu.controller.js:25:39
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at adminMiddleware (D:\Project\milking\middlewares\authorization.js:25:9)
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Wed Jun 07 2023 09:26:26 GMT+0700 (Waktu Indonesia Barat) - 400 - [Unknown] "delta_naik" is required  Error: "delta_naik" is required
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataPrediksi (D:\Project\milking\services\prediksi_susu.service.js:64:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:25:22 Wed Jun 07 2023 12:43:38 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] Missing where attribute in the options parameter  AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Function._optionsMustContainWhere (D:\Project\milking\node_modules\sequelize\lib\model.js:2130:5)
+    at Function.update (D:\Project\milking\node_modules\sequelize\lib\model.js:1896:10)
+    at _prediksiSusu.updateDataPrediksi (D:\Project\milking\services\prediksi_susu.service.js:60:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:25:22 Wed Jun 07 2023 12:44:29 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] Unknown column 'id' in 'where clause'  Error
+    at Query.run (D:\Project\milking\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\Project\milking\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.bulkUpdate (D:\Project\milking\node_modules\sequelize\lib\dialects\abstract\query-interface.js:366:12)
+    at async Function.update (D:\Project\milking\node_modules\sequelize\lib\model.js:2010:28)
+    at async _prediksiSusu.updateDataPrediksi (D:\Project\milking\services\prediksi_susu.service.js:60:17)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:25:22 Wed Jun 07 2023 12:44:55 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] Cannot read properties of null (reading 'dataValues')  TypeError: Cannot read properties of null (reading 'dataValues')
+    at _prediksiSusu.updateDataPrediksi (D:\Project\milking\services\prediksi_susu.service.js:101:56)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:25:22 Wed Jun 07 2023 12:49:19 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] Validation error  Error
+    at Query.run (D:\Project\milking\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\Project\milking\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.insert (D:\Project\milking\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\Project\milking\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\Project\milking\node_modules\sequelize\lib\model.js:1362:12)
+    at async _prediksiSusu.createDataPrediksi (D:\Project\milking\services\prediksi_susu.service.js:25:17)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:19:21 Wed Jun 07 2023 13:00:32 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] Unknown column 'id_prediksi_susu' in 'where clause'  Error
+    at Query.run (D:\Project\milking\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\Project\milking\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.bulkUpdate (D:\Project\milking\node_modules\sequelize\lib\dialects\abstract\query-interface.js:366:12)
+    at async Function.update (D:\Project\milking\node_modules\sequelize\lib\model.js:2010:28)
+    at async _prediksiSusu.updateDataPrediksi (D:\Project\milking\services\prediksi_susu.service.js:60:17)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:25:22 Thu Jun 08 2023 08:52:18 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:50:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 09:56:45 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] notNull Violation: ProduksiSusu.id_fp cannot be null  SequelizeValidationError: notNull Violation: ProduksiSusu.id_fp cannot be null
+    at InstanceValidator._validate (D:\Project\milking\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async InstanceValidator._validateAndRunHooks (D:\Project\milking\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\Project\milking\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\Project\milking\node_modules\sequelize\lib\model.js:2426:7)
+    at async Function.create (D:\Project\milking\node_modules\sequelize\lib\model.js:1362:12)
+    at async _produksiSusu.createDataProduksi (D:\Project\milking\services\produksi_susu.service.js:115:23)
+    at async D:\Project\milking\controllers\produksi_susu.controller.js:33:21 

@@ -30,6 +30,7 @@ const lepasSapihController = require("../controllers/lepas_sapih.controller");
 const riwayatLepasSapihController = require("../controllers/riwayat_lepas_sapih.controller");
 const produksiSusuController = require("../controllers/produksi_susu.controller");
 const exportToExcelController = require("../controllers/export_to_excel.controller");
+const prediksiSusuController = require("../controllers/prediksi_susu.controller");
 
 // Define url API in here
 const _routes = [
@@ -65,6 +66,7 @@ const _routes = [
     ["/riwayat-lepas-sapih", riwayatLepasSapihController],
     ["/produksi-susu", produksiSusuController],
     ["/export-to-excel", exportToExcelController],
+    ["/prediksi-susu", prediksiSusuController],
 ];
 
 const routes = (app, db) => {

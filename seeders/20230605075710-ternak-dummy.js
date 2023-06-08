@@ -25,6 +25,7 @@ module.exports = {
                     id_fp: 7,
                     tanggal_lahir: "2021-01-01",
                     tanggal_masuk: "2021-01-01",
+                    status_perah: "Perah",
                 },
                 {
                     id_peternakan: 1,
@@ -45,6 +46,7 @@ module.exports = {
                     id_fp: 7,
                     tanggal_lahir: "2021-01-01",
                     tanggal_masuk: "2021-01-01",
+                    status_perah: "Perah",
                 },
                 {
                     id_peternakan: 1,

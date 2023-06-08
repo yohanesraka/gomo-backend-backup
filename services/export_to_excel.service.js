@@ -12,7 +12,13 @@ class ExportToExcelService {
             const ProduksiSusu = await this.db.ProduksiSusu.findAll({
                 include: [{ model: this.db.Ternak, as: "ternak" }],
             });
-            const listTernak = await this.db.Ternak.findAll({ include: [{ model: this.db.Fase, as: "fase" }] });
+            const listTernakLaktasi = await this.db.Ternak.findAll({
+                include: [{ model: this.db.Fase, as: "fase" }],
+                where: { status_perah: "Perah" },
+            });
+            const listTernak = await this.db.Ternak.findAll({
+                include: [{ model: this.db.Fase, as: "fase" }],
+            });
 
             const workbook = new ExcelJS.Workbook();
             const worksheet = workbook.addWorksheet("Produksi Susu");
@@ -38,10 +44,10 @@ class ExportToExcelService {
                 const produksiPagi = ProduksiHarian.reduce((acc, row) => acc + row.produksi_pagi, 0);
                 // produksi sore
                 const produksiSore = ProduksiHarian.reduce((acc, row) => acc + row.produksi_sore, 0);
-                console.log(produksiPagi + produksiSore);
+                console.log(date);
                 console.log("ternak", listTernak.length);
                 // average harian
-                const average = (produksiPagi + produksiSore) / listTernak.length;
+                const average = (produksiPagi + produksiSore) / listTernakLaktasi.length;
                 // total harian per ternak urut berdasarkan id ternak (ASC) jika kosong maka 0
                 const totalHarianPerTernak = listTernak.map((ternak) => {
                     const ternakProduksi = ProduksiHarian.find((row) => row.id_ternak === ternak.id_ternak);
