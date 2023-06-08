@@ -12,6 +12,7 @@ class ExportToExcelService {
             const ProduksiSusu = await this.db.ProduksiSusu.findAll({
                 include: [{ model: this.db.Ternak, as: "ternak" }],
             });
+            const listPrediksi = await this.db.Prediksi.findAll();
             const listTernakLaktasi = await this.db.Ternak.findAll({
                 include: [{ model: this.db.Fase, as: "fase" }],
                 where: { status_perah: "Perah" },
@@ -36,16 +37,15 @@ class ExportToExcelService {
                 formatHeaderRow(worksheet, worksheet.getRow(1));
             });
 
-            const uniqueDates = Array.from(new Set(ProduksiSusu.map((row) => row.tanggal_produksi.toLocaleDateString("id-ID", { timeZone: "Asia/Jakarta" }))));
-
-            uniqueDates.forEach((date, index) => {
-                const ProduksiHarian = ProduksiSusu.filter((row) => row.tanggal_produksi.toLocaleDateString("id-ID", { timeZone: "Asia/Jakarta" }) === date);
+            // looping prediksi susu untuk menambahkan data prediksi ke dalam worksheet
+            listPrediksi.forEach((prediksi) => {
+                // mencari data ProduksiSusu berdasarkan tanggal
+                const ProduksiHarian = ProduksiSusu.filter((row) => row.tanggal_produksi.toLocaleDateString("id-ID", { timeZone: "Asia/Jakarta" }) === prediksi.tanggal.toLocaleDateString("id-ID", { timeZone: "Asia/Jakarta" }));
                 // produksi pagi
                 const produksiPagi = ProduksiHarian.reduce((acc, row) => acc + row.produksi_pagi, 0);
                 // produksi sore
                 const produksiSore = ProduksiHarian.reduce((acc, row) => acc + row.produksi_sore, 0);
-                console.log(date);
-                console.log("ternak", listTernak.length);
+
                 // average harian
                 const average = (produksiPagi + produksiSore) / listTernakLaktasi.length;
                 // total harian per ternak urut berdasarkan id ternak (ASC) jika kosong maka 0
@@ -66,7 +66,8 @@ class ExportToExcelService {
                     dataPerTernak.push(totalHarianPerTernak[i]);
                     dataPerTernak.push(faseTernakPerTernak[i]);
                 }
-                const dataRow = worksheet.addRow([index + 1, date, "-", 1724, average, ...dataPerTernak]);
+
+                const dataRow = worksheet.addRow([prediksi.id_hari, prediksi.tanggal.toLocaleDateString(), prediksi.data_literasi, prediksi.data_prediksi, average, ...dataPerTernak]);
 
                 formatDataRow(worksheet, dataRow);
             });

@@ -2588,4 +2588,56 @@ notNull Violation: ProduksiSusu.tanggal_prduksi cannot be null
     at async model.save (D:\Project\milking\node_modules\sequelize\lib\model.js:2426:7)
     at async Function.create (D:\Project\milking\node_modules\sequelize\lib\model.js:1362:12)
     at async _produksiSusu.createDataProduksi (D:\Project\milking\services\produksi_susu.service.js:115:23)
-    at async D:\Project\milking\controllers\produksi_susu.controller.js:33:21 
+    at async D:\Project\milking\controllers\produksi_susu.controller.js:33:21 Thu Jun 08 2023 10:36:21 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:55:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 10:38:57 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:56:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 10:40:54 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:58:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 10:41:09 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:58:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 10:41:43 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:58:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 10:42:12 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:58:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 10:42:35 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:58:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 10:43:21 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:56:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 10:43:45 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:57:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 10:44:01 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:59:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 10:44:44 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:57:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 10:45:26 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:57:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 10:47:47 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:53:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 

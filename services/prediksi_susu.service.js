@@ -39,11 +39,15 @@ class _prediksiSusu {
     updateDataLiterasi = async (req) => {
         try {
             const currentTimestamp = new Date();
+            currentTimestamp.toLocaleDateString("id-ID", { timeZone: "Asia/Jakarta" });
+            // set jam menjadi 00:00:00
             currentTimestamp.setHours(currentTimestamp.getHours()); // Mengatur jam menjadi WIB
             currentTimestamp.setHours(7);
             currentTimestamp.setMinutes(0);
             currentTimestamp.setSeconds(0);
             currentTimestamp.setMilliseconds(0);
+            console.log(currentTimestamp);
+
             const data = await this.db.ProduksiSusu.findAll({
                 attributes: ["produksi_pagi", "produksi_sore", "tanggal_produksi"],
                 where: {
@@ -58,7 +62,7 @@ class _prediksiSusu {
                 where: { status_perah: "Perah" },
             });
             for (let i = 0; i < 240; i++) {
-                currentTimestamp.setDate(currentTimestamp.getDate() + i);
+                if (i !== 0) currentTimestamp.setDate(currentTimestamp.getDate() + 1);
                 const data = {
                     tanggal: currentTimestamp,
                 };
