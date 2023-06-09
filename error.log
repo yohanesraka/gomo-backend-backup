@@ -2640,672 +2640,8 @@ notNull Violation: ProduksiSusu.tanggal_prduksi cannot be null
     at newError (D:\Project\milking\utils\errorHandler.js:6:19)
     at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:53:24)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Thu Jun 08 2023 13:14:39 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:14:39 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _dashboard.getTotalTernakByFase (E:\backend-gomo\services\web_dash.service.js:176:28)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:58:22 Thu Jun 08 2023 13:14:52 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _dashboard.getTotalTernakByFase (E:\backend-gomo\services\web_dash.service.js:176:28)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:58:22 Thu Jun 08 2023 13:14:54 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:14:58 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:15:01 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _dashboard.getTotalTernakByFase (E:\backend-gomo\services\web_dash.service.js:176:28)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:58:22 Thu Jun 08 2023 13:15:03 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:15:05 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:15:06 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _dashboard.getTotalTernakByFase (E:\backend-gomo\services\web_dash.service.js:176:28)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:58:22 Thu Jun 08 2023 13:15:08 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:15:18 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _dashboard.getTotalTernakByFase (E:\backend-gomo\services\web_dash.service.js:176:28)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:58:22 Thu Jun 08 2023 13:15:21 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _dashboard.getTotalTernakByFase (E:\backend-gomo\services\web_dash.service.js:176:28)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:58:22 Thu Jun 08 2023 13:15:22 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:15:38 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:16:01 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:16:18 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:16:25 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:16:32 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:16:50 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:16:53 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:16:55 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:17:06 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:17:06 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:17:07 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:17:10 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:17:30 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:17:32 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:18:10 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:18:20 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:18:32 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:18:39 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:18:47 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:18:50 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:19:03 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:19:13 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:19:33 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:19:56 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:20:03 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:20:05 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:20:07 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:20:19 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:20:21 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:21:03 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:21:05 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'Ternak.status_perah' in 'field list'  Error
-    at Query.run (E:\backend-gomo\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
-    at E:\backend-gomo\node_modules\sequelize\lib\sequelize.js:315:28
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (E:\backend-gomo\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
-    at async Ternak.findAll (E:\backend-gomo\node_modules\sequelize\lib\model.js:1140:21)
-    at async _ternak.getTernak (E:\backend-gomo\services\ternak.service.js:46:26)
-    at async E:\backend-gomo\controllers\ternak.controller.js:16:24 Thu Jun 08 2023 13:28:37 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getTotalTernakByJenisKandang (E:\backend-gomo\services\web_dash.service.js:245:37)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:66:22 Thu Jun 08 2023 13:28:37 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getADGCempe (E:\backend-gomo\services\web_dash.service.js:323:41)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:74:22 Thu Jun 08 2023 13:28:44 GMT+0700 (Western Indonesia Time) - 404 - [getDataTimbangan Service] Data Timbangan tidak ditemukan  Error: Data Timbangan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _timbangan.getDataTimbangan (E:\backend-gomo\services\timbangan.service.js:23:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\timbangan.controller.js:15:24 Thu Jun 08 2023 13:28:44 GMT+0700 (Western Indonesia Time) - 404 - [getRiwayatKesehatan Service] Data riwayat kesehatan tidak ditemukan  Error: Data riwayat kesehatan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _riwayatKesehatan.getRiwayatKesehatan (E:\backend-gomo\services\riwayat_kesehatan.service.js:34:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\riwayat_kesehatan.controller.js:15:24 Thu Jun 08 2023 13:28:44 GMT+0700 (Western Indonesia Time) - 404 - [getAdaptasi] Data Adaptasi tidak ditemukan  Error: Data Adaptasi tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _adaptasi.getAdaptasiMain (E:\backend-gomo\services\adaptasi.service.js:67:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\adaptasi.controller.js:51:22 Thu Jun 08 2023 13:28:49 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getTotalTernakByJenisKandang (E:\backend-gomo\services\web_dash.service.js:245:37)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:66:22 Thu Jun 08 2023 13:28:49 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getADGCempe (E:\backend-gomo\services\web_dash.service.js:323:41)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:74:22 Thu Jun 08 2023 13:28:52 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _kandang.getKandang (E:\backend-gomo\services\kandang.service.js:71:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\kandang.controller.js:16:24 Thu Jun 08 2023 13:28:52 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:28:52 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:30:55 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _kandang.getKandang (E:\backend-gomo\services\kandang.service.js:71:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\kandang.controller.js:16:24 Thu Jun 08 2023 13:30:56 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:30:56 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:31:02 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _kandang.getKandang (E:\backend-gomo\services\kandang.service.js:71:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\kandang.controller.js:16:24 Thu Jun 08 2023 13:31:09 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getTotalTernakByJenisKandang (E:\backend-gomo\services\web_dash.service.js:245:37)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:66:22 Thu Jun 08 2023 13:31:09 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getADGCempe (E:\backend-gomo\services\web_dash.service.js:323:41)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:74:22 Thu Jun 08 2023 13:33:08 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getTotalTernakByJenisKandang (E:\backend-gomo\services\web_dash.service.js:245:37)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:66:22 Thu Jun 08 2023 13:33:08 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getADGCempe (E:\backend-gomo\services\web_dash.service.js:323:41)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:74:22 Thu Jun 08 2023 13:33:16 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _kandang.getKandang (E:\backend-gomo\services\kandang.service.js:71:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\kandang.controller.js:16:24 Thu Jun 08 2023 13:33:16 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:33:16 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:33:21 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _kandang.getKandang (E:\backend-gomo\services\kandang.service.js:71:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\kandang.controller.js:16:24 Thu Jun 08 2023 13:33:44 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _kandang.getKandang (E:\backend-gomo\services\kandang.service.js:71:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\kandang.controller.js:16:24 Thu Jun 08 2023 13:34:01 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:34:01 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:34:13 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 13:34:15 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 13:34:16 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 13:34:20 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 13:34:21 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 13:34:49 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:34:49 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:34:53 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:34:53 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:35:08 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 13:35:08 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 13:39:42 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:39:42 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:42:08 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:42:08 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:43:07 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:43:07 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:47:00 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:47:00 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:47:10 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:47:10 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:47:14 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:47:14 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:51:33 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:51:33 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:54:07 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:54:07 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 13:54:34 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataIndukan (E:\backend-gomo\services\ternak.service.js:790:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:32:24 Thu Jun 08 2023 13:54:34 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:03:37 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:03:59 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:04:19 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:05:58 GMT+0700 (Western Indonesia Time) - 404 - [getPenyakit Service] Data Penyakit tidak ditemukan  Error: Data Penyakit tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _penyakit.getPenyakit (E:\backend-gomo\services\penyakit.service.js:14:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\penyakit.controller.js:15:24 Thu Jun 08 2023 14:06:15 GMT+0700 (Western Indonesia Time) - 404 - [getPenyakit Service] Data Penyakit tidak ditemukan  Error: Data Penyakit tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _penyakit.getPenyakit (E:\backend-gomo\services\penyakit.service.js:14:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\penyakit.controller.js:15:24 Thu Jun 08 2023 14:06:22 GMT+0700 (Western Indonesia Time) - 404 - [getPenyakit Service] Data Penyakit tidak ditemukan  Error: Data Penyakit tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _penyakit.getPenyakit (E:\backend-gomo\services\penyakit.service.js:14:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\penyakit.controller.js:15:24 Thu Jun 08 2023 14:06:52 GMT+0700 (Western Indonesia Time) - 404 - [getPenyakit Service] Data Penyakit tidak ditemukan  Error: Data Penyakit tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _penyakit.getPenyakit (E:\backend-gomo\services\penyakit.service.js:14:34)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\penyakit.controller.js:15:24 Thu Jun 08 2023 14:06:56 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:07:33 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:11:02 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:11:13 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:11:16 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:11:42 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:16:05 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:16:09 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:16:13 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:16:16 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:16:19 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.getDataPejantan (E:\backend-gomo\services\ternak.service.js:926:35)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:40:24 Thu Jun 08 2023 14:22:38 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getADGCempe (E:\backend-gomo\services\web_dash.service.js:323:41)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:74:22 Thu Jun 08 2023 14:22:38 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getTotalTernakByJenisKandang (E:\backend-gomo\services\web_dash.service.js:264:36)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:66:22 Thu Jun 08 2023 14:25:36 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 14:25:40 GMT+0700 (Western Indonesia Time) - 400 - [createTernak Service] Jantan cannot be in fase Kebuntingan  Error: Jantan cannot be in fase Kebuntingan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:542:21)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 14:35:18 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 14:35:24 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 14:36:06 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 14:36:07 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 14:36:07 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 14:36:07 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 14:36:08 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 14:36:08 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 14:37:24 GMT+0700 (Western Indonesia Time) - 400 - [updateTernak Service] "status_perah" is not allowed  Error: "status_perah" is not allowed
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _ternak.updateTernak (E:\backend-gomo\services\ternak.service.js:529:24)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\ternak.controller.js:89:22 Thu Jun 08 2023 14:40:40 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getTotalTernakByJenisKandang (E:\backend-gomo\services\web_dash.service.js:264:36)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:66:22 Thu Jun 08 2023 14:40:40 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getADGCempe (E:\backend-gomo\services\web_dash.service.js:323:41)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:74:22 Thu Jun 08 2023 14:40:42 GMT+0700 (Western Indonesia Time) - 404 - [getLKPemasukanThisMonth Service] Data LK Pemasukan tidak ditemukan  Error: Data LK Pemasukan tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _lkPemasukan.getLKPemasukanThisMonth (E:\backend-gomo\services\lk_pemasukan.service.js:230:41)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\lk_pemasukan.controller.js:51:24 Thu Jun 08 2023 14:40:52 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Ternak tidak ditemukan  Error: Data Ternak tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getTotalTernakByJenisKandang (E:\backend-gomo\services\web_dash.service.js:264:36)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:66:22 Thu Jun 08 2023 14:40:52 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
-    at newError (E:\backend-gomo\utils\errorHandler.js:6:19)
-    at _dashboard.getADGCempe (E:\backend-gomo\services\web_dash.service.js:323:41)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async E:\backend-gomo\controllers\web_dash.controller.js:74:22 
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Fri Jun 09 2023 15:23:03 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:58:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 

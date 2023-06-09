@@ -38,7 +38,7 @@ class ExportToExcelService {
             });
 
             // looping prediksi susu untuk menambahkan data prediksi ke dalam worksheet
-            listPrediksi.forEach((prediksi) => {
+            listPrediksi.forEach((prediksi, index) => {
                 // mencari data ProduksiSusu berdasarkan tanggal
                 const ProduksiHarian = ProduksiSusu.filter((row) => row.tanggal_produksi.toLocaleDateString("id-ID", { timeZone: "Asia/Jakarta" }) === prediksi.tanggal.toLocaleDateString("id-ID", { timeZone: "Asia/Jakarta" }));
                 // produksi pagi
@@ -68,7 +68,6 @@ class ExportToExcelService {
                 }
 
                 const dataRow = worksheet.addRow([prediksi.id_hari, prediksi.tanggal.toLocaleDateString(), prediksi.data_literasi, prediksi.data_prediksi, average, ...dataPerTernak]);
-
                 formatDataRow(worksheet, dataRow);
             });
 
@@ -80,27 +79,13 @@ class ExportToExcelService {
                     const avgCellPrevValue = avgCellPrev.value;
 
                     if (avgCellValue === avgCellPrevValue) {
+                        // Warna cell avgCell berwarna hijau
                         avgCell.fill = {
                             type: "pattern",
                             pattern: "solid",
-                            fgColor: { argb: "FF00FF00" },
-                        };
-                    } else if (avgCellValue < avgCellPrevValue) {
-                        const color = Math.round((avgCellValue / avgCellPrevValue) * 255);
-                        avgCell.fill = {
-                            type: "pattern",
-                            pattern: "solid",
-                            fgColor: { argb: `FFFF${color.toString(16)}00` },
-                        };
-                    } else if (avgCellValue > avgCellPrevValue) {
-                        const color = Math.round((avgCellPrevValue / avgCellValue) * 255);
-                        avgCell.fill = {
-                            type: "pattern",
-                            pattern: "solid",
-                            fgColor: { argb: `FF00${color.toString(16)}FF` },
+                            fgColor: { argb: "FF00FF99" }, // Hijau
                         };
                     }
-
                     const totalHarianTernakColumns = [];
                     const faseTernak = [];
 
