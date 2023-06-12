@@ -58,7 +58,7 @@ module.exports = (Sequelize, DataTypes) => {
             },
             status_perah: {
                 type: DataTypes.STRING,
-                allowNull: false,
+                allowNull: true,
             },
             tanggal_keluar: {
                 type: DataTypes.DATE,

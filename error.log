@@ -2644,4 +2644,82 @@ notNull Violation: ProduksiSusu.tanggal_prduksi cannot be null
     at newError (D:\Project\milking\utils\errorHandler.js:6:19)
     at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:58:24)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 Fri Jun 09 2023 23:18:22 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getADGCempe (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:323:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:74:22 Fri Jun 09 2023 23:39:38 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/kandang.controller.js:16:24 Fri Jun 09 2023 23:39:38 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/ternak.service.js:775:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/ternak.controller.js:32:24 Fri Jun 09 2023 23:39:39 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/ternak.service.js:899:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/ternak.controller.js:40:24 Mon Jun 12 2023 09:17:08 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'ProduksiSusu.id_produksi' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async ProduksiSusu.findAll (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/model.js:1140:21)
+    at async _produksiSusu.getDataProduksi (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:17:26)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/produksi_susu.controller.js:14:22 Mon Jun 12 2023 09:17:29 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Unknown column 'ProduksiSusu.tanggal_prduksi' in 'field list'  Error
+    at Query.run (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async ProduksiSusu.findAll (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/model.js:1140:21)
+    at async _produksiSusu.getDataProduksi (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:17:26)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/produksi_susu.controller.js:14:22 Mon Jun 12 2023 09:24:45 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getADGCempe (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:323:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:74:22 Mon Jun 12 2023 09:24:45 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:245:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:66:22 Mon Jun 12 2023 13:30:54 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getADGCempe (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:323:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:74:22 Mon Jun 12 2023 13:30:55 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:245:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:66:22 Mon Jun 12 2023 15:47:26 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:245:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:66:22 Mon Jun 12 2023 15:47:26 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getADGCempe (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:323:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:74:22 Mon Jun 12 2023 23:27:24 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:245:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:66:22 Mon Jun 12 2023 23:27:24 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getADGCempe (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:323:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:74:22 Mon Jun 12 2023 23:28:07 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/ternak.service.js:775:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/ternak.controller.js:32:24 Mon Jun 12 2023 23:28:08 GMT+0700 (Western Indonesia Time) - 404 - [getPenyakit Service] Data Penyakit tidak ditemukan  Error: Data Penyakit tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _penyakit.getPenyakit (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/penyakit.service.js:14:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/penyakit.controller.js:15:24 Mon Jun 12 2023 23:29:11 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:245:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:66:22 Mon Jun 12 2023 23:29:11 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getADGCempe (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:323:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:74:22 
