@@ -46,7 +46,6 @@ class _prediksiSusu {
             currentTimestamp.setMinutes(0);
             currentTimestamp.setSeconds(0);
             currentTimestamp.setMilliseconds(0);
-            console.log(currentTimestamp);
 
             const data = await this.db.ProduksiSusu.findAll({
                 attributes: ["produksi_pagi", "produksi_sore", "tanggal_produksi"],
@@ -91,7 +90,7 @@ class _prediksiSusu {
 
             // update kolom data_literasi looping dari hari 1 sampai hari 61 dengan value rataRataProduksiHarian + delta_naik, pada hari 62 sampai hari 121 dengan value rataRataProduksiHarian - delta_turun, pada hari 122 sampai terakhir dengan value 0
 
-            for (let i = 0; i <= 61; i++) {
+            for (let i = 0; i <= 60; i++) {
                 const data = {
                     data_literasi: rataRataProduksiHarian,
                 };
@@ -118,7 +117,7 @@ class _prediksiSusu {
                     });
                 }
             }
-            for (let i = 61; i <= 210; i++) {
+            for (let i = 60; i <= 210; i++) {
                 const dataBefore = await this.db.Prediksi.findOne({
                     attributes: ["data_literasi"],
                     where: {
@@ -155,7 +154,6 @@ class _prediksiSusu {
                 data: dataPrediksi,
             };
         } catch (error) {
-            console.log(error);
             return errorHandler(error);
         }
     };
@@ -229,10 +227,7 @@ class _prediksiSusu {
             const deltaNaik = (2 * targetNaik - 2 * rataRataProduksiHarian * 61) / (60 * 61);
             const deltaTurun = (2 * targetTurun - 2 * puncakLaktasi * 150) / (150 * 149);
 
-            console.log(Math.round(deltaNaik));
-            console.log(Math.round(deltaTurun));
-
-            for (let i = 0; i <= 61; i++) {
+            for (let i = 0; i <= 60; i++) {
                 const data = {
                     data_prediksi: rataRataProduksiHarian,
                 };
@@ -259,7 +254,7 @@ class _prediksiSusu {
                     });
                 }
             }
-            for (let i = 61; i <= 210; i++) {
+            for (let i = 60; i <= 210; i++) {
                 const dataBefore = await this.db.Prediksi.findOne({
                     attributes: ["data_prediksi"],
                     where: {
@@ -295,7 +290,6 @@ class _prediksiSusu {
                 data: dataPrediksi,
             };
         } catch (error) {
-            console.log(error);
             return errorHandler(error);
         }
     };

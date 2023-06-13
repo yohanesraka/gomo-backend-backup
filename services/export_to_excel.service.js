@@ -73,52 +73,129 @@ class ExportToExcelService {
 
             worksheet.eachRow((row, rowNumber) => {
                 if (rowNumber > 1) {
+                    function argb(position) {
+                        const cell = row.getCell(position);
+                        const cellValue = cell.value;
+                        const maxValue = worksheet.getColumn(position).values.reduce((acc, value) => (value > acc ? value : acc), 0);
+
+                        // Hitung komponen warna R, G, B berdasarkan nilai prediksiCell dan nilai maksimal
+                        const red = 255;
+                        const green = Math.floor((1 - cellValue / maxValue) * 255);
+                        const blue = Math.floor((cellValue / maxValue) * 255);
+
+                        // Buat string argb berdasarkan komponen warna
+                        const argb = "FF" + toHex(red) + toHex(green) + toHex(blue);
+
+                        return argb;
+                    }
+
+                    // Fungsi untuk mengonversi nilai desimal menjadi heksadesimal dengan dua digit
+                    function toHex(decimal) {
+                        const hex = decimal.toString(16).toUpperCase();
+                        return hex.length === 1 ? "0" + hex : hex;
+                    }
+
+                    const prediksiCell = row.getCell(4);
+                    const literasiCell = row.getCell(3);
+
+                    prediksiCell.fill = {
+                        type: "pattern",
+                        pattern: "solid",
+                        fgColor: { argb: argb(4) },
+                    };
+
+                    literasiCell.fill = {
+                        type: "pattern",
+                        pattern: "solid",
+                        fgColor: { argb: argb(3) },
+                    };
                     const avgCell = row.getCell(5);
                     const avgCellValue = avgCell.value;
                     const avgCellPrev = row.getCell(4);
                     const avgCellPrevValue = avgCellPrev.value;
+
+                    const selisih = Math.abs(avgCellValue - avgCellPrevValue);
 
                     if (avgCellValue === avgCellPrevValue) {
                         // Warna cell avgCell berwarna hijau
                         avgCell.fill = {
                             type: "pattern",
                             pattern: "solid",
-                            fgColor: { argb: "FF00FF99" }, // Hijau
+                            fgColor: { argb: "FF00FF00" }, // Hijau
+                        };
+                    } else if (avgCellValue < avgCellPrevValue && selisih <= 100) {
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: "FF66FF66" },
+                        };
+                    } else if (avgCellValue < avgCellPrevValue && selisih > 100 && selisih <= 200) {
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: "FF99FF99" },
+                        };
+                    } else if (avgCellValue < avgCellPrevValue && selisih > 200 && selisih <= 300) {
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: "FFCCFFCC" },
+                        };
+                    } else if (avgCellValue < avgCellPrevValue && selisih > 800) {
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: "FFFF0000" },
+                        };
+                    } else if (avgCellValue < avgCellPrevValue && selisih > 300 && selisih <= 500) {
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: "FFFFCCCC" },
+                        };
+                    } else if (avgCellValue < avgCellPrevValue && selisih > 500 && selisih <= 800) {
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: "FFFF9999" },
+                        };
+                    } else if (avgCellValue > avgCellPrevValue && selisih <= 100) {
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: "FFCCCCFF" },
+                        };
+                    } else if (avgCellValue > avgCellPrevValue && selisih > 100 && selisih <= 200) {
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: "FF9999FF" },
+                        };
+                    } else if (avgCellValue > avgCellPrevValue && selisih > 200 && selisih <= 300) {
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: "FF6666FF" },
+                        };
+                    } else if (avgCellValue > avgCellPrevValue && selisih > 300 && selisih <= 500) {
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: "FF3333FF" },
+                        };
+                    } else if (avgCellValue > avgCellPrevValue && selisih > 500) {
+                        avgCell.fill = {
+                            type: "pattern",
+                            pattern: "solid",
+                            fgColor: { argb: "FF0000FF" },
                         };
                     }
-                    const totalHarianTernakColumns = [];
-                    const faseTernak = [];
 
+                    const faseTernak = [];
                     // Mengumpulkan indeks kolom totalHarianTernak dan idTernak
                     for (let i = 6; i < row.cellCount; i += 2) {
-                        totalHarianTernakColumns.push(i);
                         faseTernak.push(i + 1);
                     }
-
-                    // Menerapkan kondisi pada kolom totalHarianTernak
-                    totalHarianTernakColumns.forEach((columnIndex) => {
-                        const totalHarianTernakCell = row.getCell(columnIndex);
-
-                        if (totalHarianTernakCell.value < 2000) {
-                            totalHarianTernakCell.fill = {
-                                type: "pattern",
-                                pattern: "solid",
-                                fgColor: { argb: "FFFF0000" },
-                            };
-                        } else if (totalHarianTernakCell.value >= 2000 && totalHarianTernakCell.value <= 2500) {
-                            totalHarianTernakCell.fill = {
-                                type: "pattern",
-                                pattern: "solid",
-                                fgColor: { argb: "FFFFFF00" },
-                            };
-                        } else if (totalHarianTernakCell.value > 2500) {
-                            totalHarianTernakCell.fill = {
-                                type: "pattern",
-                                pattern: "solid",
-                                fgColor: { argb: "FFFFFF00" },
-                            };
-                        }
-                    });
 
                     // Menerapkan kondisi pada kolom fase ternak
                     faseTernak.forEach((columnIndex) => {
@@ -183,10 +260,9 @@ class ExportToExcelService {
             return {
                 code: 200,
                 status: "OK",
-                data: ProduksiSusu,
+                data: "Berhasil export data ke excel",
             };
         } catch (error) {
-            console.log(error);
             throw errorHandler(error);
         }
     }
