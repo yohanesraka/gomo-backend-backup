@@ -2907,4 +2907,8 @@ notNull Violation: ProduksiSusu.tanggal_prduksi cannot be null
     at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
     at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
     at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Tue Jun 13 2023 15:54:22 GMT+0700 (Waktu Indonesia Barat) - 404 - [updateDataLiterasi Service] Masukkan data produksi susu hari ini terlebih dahulu  Error: Masukkan data produksi susu hari ini terlebih dahulu
+    at newError (D:\Project\milking\utils\errorHandler.js:6:19)
+    at _prediksiSusu.updateDataLiterasi (D:\Project\milking\services\prediksi_susu.service.js:57:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\Project\milking\controllers\prediksi_susu.controller.js:18:22 
