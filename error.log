@@ -2817,4 +2817,94 @@ notNull Violation: ProduksiSusu.tanggal_prduksi cannot be null
     at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
     at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
     at authentication (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authentication.js:56:9)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) Tue Jun 13 2023 13:10:43 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (D:\Project\milking\services\produksi_susu.service.js:52:23)
+    at D:\Project\milking\controllers\produksi_susu.controller.js:19:43
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at adminMiddleware (D:\Project\milking\middlewares\authorization.js:25:9)
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Tue Jun 13 2023 13:25:05 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (D:\Project\milking\services\produksi_susu.service.js:52:23)
+    at D:\Project\milking\controllers\produksi_susu.controller.js:19:43
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at adminMiddleware (D:\Project\milking\middlewares\authorization.js:25:9)
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Tue Jun 13 2023 13:25:57 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (D:\Project\milking\services\produksi_susu.service.js:52:23)
+    at D:\Project\milking\controllers\produksi_susu.controller.js:19:43
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at adminMiddleware (D:\Project\milking\middlewares\authorization.js:25:9)
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Tue Jun 13 2023 13:27:28 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (D:\Project\milking\services\produksi_susu.service.js:52:23)
+    at D:\Project\milking\controllers\produksi_susu.controller.js:18:43
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at adminMiddleware (D:\Project\milking\middlewares\authorization.js:25:9)
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Tue Jun 13 2023 13:29:39 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (D:\Project\milking\services\produksi_susu.service.js:52:23)
+    at D:\Project\milking\controllers\produksi_susu.controller.js:18:43
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at adminMiddleware (D:\Project\milking\middlewares\authorization.js:25:9)
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Tue Jun 13 2023 13:30:24 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (D:\Project\milking\services\produksi_susu.service.js:52:23)
+    at D:\Project\milking\controllers\produksi_susu.controller.js:18:43
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at adminMiddleware (D:\Project\milking\middlewares\authorization.js:25:9)
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Tue Jun 13 2023 13:30:34 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (D:\Project\milking\services\produksi_susu.service.js:52:23)
+    at D:\Project\milking\controllers\produksi_susu.controller.js:18:43
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at adminMiddleware (D:\Project\milking\middlewares\authorization.js:25:9)
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Tue Jun 13 2023 13:30:54 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (D:\Project\milking\services\produksi_susu.service.js:52:23)
+    at D:\Project\milking\controllers\produksi_susu.controller.js:18:43
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at adminMiddleware (D:\Project\milking\middlewares\authorization.js:25:9)
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Tue Jun 13 2023 13:31:22 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (D:\Project\milking\services\produksi_susu.service.js:52:23)
+    at D:\Project\milking\controllers\produksi_susu.controller.js:18:43
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at adminMiddleware (D:\Project\milking\middlewares\authorization.js:25:9)
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Tue Jun 13 2023 13:32:03 GMT+0700 (Waktu Indonesia Barat) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (D:\Project\milking\services\produksi_susu.service.js:52:23)
+    at D:\Project\milking\controllers\produksi_susu.controller.js:18:43
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at adminMiddleware (D:\Project\milking\middlewares\authorization.js:25:9)
+    at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
+    at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
