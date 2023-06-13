@@ -2722,4 +2722,99 @@ notNull Violation: ProduksiSusu.tanggal_prduksi cannot be null
     at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
     at _dashboard.getADGCempe (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:323:41)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:74:22 
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:74:22 Tue Jun 13 2023 08:57:48 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getADGCempe (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:323:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:74:22 Tue Jun 13 2023 08:57:48 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:245:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:66:22 Tue Jun 13 2023 08:57:56 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/ternak.service.js:775:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/ternak.controller.js:32:24 Tue Jun 13 2023 11:02:52 GMT+0700 (Western Indonesia Time) - 404 - [getAdaptasi] Data Adaptasi tidak ditemukan  Error: Data Adaptasi tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _adaptasi.getAdaptasiMain (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/adaptasi.service.js:67:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/adaptasi.controller.js:51:22 Tue Jun 13 2023 11:02:52 GMT+0700 (Western Indonesia Time) - 404 - [getRiwayatKesehatan Service] Data riwayat kesehatan tidak ditemukan  Error: Data riwayat kesehatan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _riwayatKesehatan.getRiwayatKesehatan (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/riwayat_kesehatan.service.js:34:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/riwayat_kesehatan.controller.js:15:24 Tue Jun 13 2023 11:02:52 GMT+0700 (Western Indonesia Time) - 404 - [getDataTimbangan Service] Data Timbangan tidak ditemukan  Error: Data Timbangan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _timbangan.getDataTimbangan (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/timbangan.service.js:23:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/timbangan.controller.js:15:24 Tue Jun 13 2023 11:06:55 GMT+0700 (Western Indonesia Time) - 404 - [getKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _kandang.getKandang (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/kandang.service.js:71:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/kandang.controller.js:16:24 Tue Jun 13 2023 11:06:55 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/ternak.service.js:775:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/ternak.controller.js:32:24 Tue Jun 13 2023 11:06:55 GMT+0700 (Western Indonesia Time) - 404 - [getDataPejantan Service] Data Ternak Pejantan tidak ditemukan  Error: Data Ternak Pejantan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _ternak.getDataPejantan (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/ternak.service.js:899:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/ternak.controller.js:40:24 Tue Jun 13 2023 11:19:36 GMT+0700 (Western Indonesia Time) - 404 - [getDataIndukan Service] Data Ternak Indukan tidak ditemukan  Error: Data Ternak Indukan tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _ternak.getDataIndukan (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/ternak.service.js:775:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/ternak.controller.js:32:24 Tue Jun 13 2023 11:19:38 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Cannot read properties of null (reading 'dataValues')  TypeError: Cannot read properties of null (reading 'dataValues')
+    at _kebuntingan.getTernakKebuntingan (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/kebuntingan.service.js:297:66)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/kebuntingan.controller.js:40:22 Tue Jun 13 2023 11:19:47 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:245:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:66:22 Tue Jun 13 2023 11:19:47 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getADGCempe (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:323:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:74:22 Tue Jun 13 2023 11:34:41 GMT+0700 (Western Indonesia Time) - 404 - [getTotalTernakByJenisKandang Service] Data Kandang tidak ditemukan  Error: Data Kandang tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getTotalTernakByJenisKandang (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:245:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:66:22 Tue Jun 13 2023 11:34:41 GMT+0700 (Western Indonesia Time) - 404 - [getAdgCempe Service] Ternak Cempe tidak ditemukan  Error: Ternak Cempe tidak ditemukan
+    at newError (/Users/macbook/Documents/stechoq/gomo/backend-gomo/utils/errorHandler.js:6:19)
+    at _dashboard.getADGCempe (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/web_dash.service.js:323:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/web_dash.controller.js:74:22 Tue Jun 13 2023 12:53:38 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:59:15)
+    at /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/produksi_susu.controller.js:19:43
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at adminMiddleware (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authorization.js:25:9)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at authentication (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authentication.js:56:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) Tue Jun 13 2023 12:53:59 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:59:15)
+    at /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/produksi_susu.controller.js:19:43
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at adminMiddleware (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authorization.js:25:9)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at authentication (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authentication.js:56:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) Tue Jun 13 2023 12:55:17 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:59:15)
+    at /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/produksi_susu.controller.js:19:43
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at adminMiddleware (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authorization.js:25:9)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at authentication (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authentication.js:56:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) Tue Jun 13 2023 12:55:43 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] "id_ternak" must be a number  Error: "id_ternak" must be a number
+    at _produksiSusu.getDataProduksiByIdTernak (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:59:15)
+    at /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/produksi_susu.controller.js:19:43
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at adminMiddleware (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authorization.js:25:9)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at authentication (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authentication.js:56:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) 

@@ -19,6 +19,11 @@ const produksiController = (db) =>{
         const listByID = await s$produksi.getDataProduksiByIdTernak(req);
         response.sendResponse(res, listByID);
     });
+
+    ProduksiController.get('/total', authentication, adminMiddleware, async (req, res, next) =>{
+        const listTotal = await s$produksi.getTotalDataProduksi(req);
+        response.sendResponse(res, listTotal);
+    });
     
     /** 
      * @param {number} id_peternakan
