@@ -2907,4 +2907,63 @@ notNull Violation: ProduksiSusu.tanggal_prduksi cannot be null
     at Layer.handle [as handle_request] (D:\Project\milking\node_modules\express\lib\router\layer.js:95:5)
     at next (D:\Project\milking\node_modules\express\lib\router\route.js:144:13)
     at authentication (D:\Project\milking\middlewares\authentication.js:56:9)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) Tue Jun 13 2023 21:57:55 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] connect ECONNREFUSED ::1:3306  SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/sequelize.js:305:26
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.login (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/auth.service.js:30:35)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/auth.controller.js:21:23 Tue Jun 13 2023 21:58:01 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] connect ECONNREFUSED ::1:3306  SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/sequelize.js:305:26
+    at async MySQLQueryInterface.select (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async AuthUser.findAll (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/model.js:1140:21)
+    at async AuthUser.findOne (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/sequelize/lib/model.js:1240:12)
+    at async _auth.login (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/auth.service.js:30:35)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/auth.controller.js:21:23 Wed Jun 14 2023 10:13:03 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] date.toISOString is not a function  TypeError: date.toISOString is not a function
+    at /Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:122:41
+    at Array.map (<anonymous>)
+    at _produksiSusu.getTotalDataProduksi (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:116:51)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/produksi_susu.controller.js:18:27 Wed Jun 14 2023 12:36:28 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] ProduksiSusu is not defined  ReferenceError: ProduksiSusu is not defined
+    at _produksiSusu.getTotalDataProduksi (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:113:26)
+    at /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/produksi_susu.controller.js:18:44
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at adminMiddleware (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authorization.js:25:9)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at authentication (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authentication.js:56:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) Wed Jun 14 2023 12:36:55 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] ProduksiSusu is not defined  ReferenceError: ProduksiSusu is not defined
+    at _produksiSusu.getTotalDataProduksi (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:113:26)
+    at /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/produksi_susu.controller.js:18:44
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at adminMiddleware (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authorization.js:25:9)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at authentication (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authentication.js:56:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) Wed Jun 14 2023 12:37:25 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] Cannot access 'ProduksiSusu' before initialization  ReferenceError: Cannot access 'ProduksiSusu' before initialization
+    at _produksiSusu.getTotalDataProduksi (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:113:26)
+    at /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/produksi_susu.controller.js:18:44
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at adminMiddleware (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authorization.js:25:9)
+    at Layer.handle [as handle_request] (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbook/Documents/stechoq/gomo/backend-gomo/node_modules/express/lib/router/route.js:144:13)
+    at authentication (/Users/macbook/Documents/stechoq/gomo/backend-gomo/middlewares/authentication.js:56:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) Wed Jun 14 2023 12:38:11 GMT+0700 (Western Indonesia Time) - 500 - [Unknown] date.toISOString is not a function  TypeError: date.toISOString is not a function
+    at /Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:132:41
+    at Array.map (<anonymous>)
+    at _produksiSusu.getTotalDataProduksi (/Users/macbook/Documents/stechoq/gomo/backend-gomo/services/produksi_susu.service.js:117:51)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/macbook/Documents/stechoq/gomo/backend-gomo/controllers/produksi_susu.controller.js:18:27 

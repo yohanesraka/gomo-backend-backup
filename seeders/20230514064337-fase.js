@@ -23,9 +23,6 @@ module.exports = {
         fase: "Kosong"
       },
       {
-        fase: "Laktasi"
-      },
-      {
         fase: "Kering"
       },
       {

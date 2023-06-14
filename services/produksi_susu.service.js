@@ -91,8 +91,9 @@ class _produksiSusu {
                 const produksi_pagi = data.reduce((acc, row) => acc + Number(row.produksi_pagi), 0);
                 const produksi_sore = data.reduce((acc, row) => acc + Number(row.produksi_sore), 0);
                 const total = data.reduce((acc, row) => acc + Number(row.total_harian), 0);
+                const outputDate = date.split("/").reverse().join("-");
                 return {
-                    date,
+                    date: outputDate,
                     population,
                     produksi_pagi,
                     produksi_sore,
@@ -107,7 +108,6 @@ class _produksiSusu {
             return errorHandler(error);
         }
     };
-
     createDataProduksi = async (req) => {
         const t = await this.db.sequelize.transaction();
         try {

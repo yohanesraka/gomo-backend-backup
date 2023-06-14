@@ -130,7 +130,7 @@ class _ternak {
 
             // Filter data
             for (let i = 0; i < list.length; i++) {
-                // Calculate umur
+                // Calculate umur 
                 const umurHari = list[i].dataValues.tanggal_lahir ? Math.round((new Date() - new Date(list[i].dataValues.tanggal_lahir)) / (1000 * 60 * 60 * 24)) : 0;
                 list[i].dataValues.umur = `${Math.floor(umurHari / 30)} bulan ${umurHari % 30} hari`;
 
