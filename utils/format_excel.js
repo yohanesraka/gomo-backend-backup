@@ -1,5 +1,7 @@
 require("exceljs");
 require("fs");
+const path = require("path");
+const os = require("os");
 
 // Fungsi untuk memformat kolom di Excel
 const formatColumn = (worksheet, columnIndex, width, headerText) => {
@@ -29,8 +31,8 @@ const formatDataRow = (worksheet, dataRow) => {
 // Fungsi untuk menghasilkan file Excel dari workbook
 const generateExcelFile = async (workbook) => {
     const filename = `Data Produksi Susu.xlsx`;
-
-    const filePath = "./public/static/" + filename;
+    // buat file path di default folder download user (misal: C:\Users\user\Downloads)
+    const filePath = path.join(os.homedir(), "Downloads", filename);
     await workbook.xlsx.writeFile(filePath);
 
     return filePath;
