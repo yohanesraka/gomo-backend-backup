@@ -38,6 +38,7 @@ class _prediksiSusu {
 
     updateDataLiterasi = async (req) => {
         try {
+            // const currentTimestamp = new Date("2023-01-04"); // jika ingin menggunakan data dummy uncomment ini dan comment yang dibawah
             const currentTimestamp = new Date();
             currentTimestamp.toLocaleDateString("id-ID", { timeZone: "Asia/Jakarta" });
             // set jam menjadi 00:00:00
@@ -54,7 +55,7 @@ class _prediksiSusu {
                 },
             });
             if (data.length === 0) {
-                return newError(404, "Masukkan data produksi susu hari ini terlebih dahulu", "updateDataLiterasi Service");
+                return newError(404, `Masukan data susu tanggal  ${currentTimestamp}  terlebih dahulu`, "updateDataLiterasi Service");
             }
             const listTernak = await this.db.Ternak.findAll({
                 include: [{ model: this.db.Fase, as: "fase" }],
@@ -160,6 +161,7 @@ class _prediksiSusu {
 
     updateDataPrediksi = async (req) => {
         try {
+            // const currentTimestamp = new Date("2023-01-04"); // jika ingin menggunakan data dummy uncomment ini dan comment yang dibawah
             const currentTimestamp = new Date();
             currentTimestamp.setHours(currentTimestamp.getHours()); // Mengatur jam menjadi WIB
             currentTimestamp.setHours(7);
@@ -178,7 +180,7 @@ class _prediksiSusu {
                 },
             });
             if (data.length === 0) {
-                return newError(404, "Masukkan data produksi susu hari ini terlebih dahulu", "updateDataPrediksi Service");
+                return newError(404, `Masukan data susu tanggal  ${currentTimestamp}  terlebih dahulu`, "updateDataLiterasi Service");
             }
             const listTernak = await this.db.Ternak.findAll({
                 include: [{ model: this.db.Fase, as: "fase" }],
